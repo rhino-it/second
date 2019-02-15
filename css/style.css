@@ -260,6 +260,7 @@ ul {
 .navbar-nav > li > a{
 	padding: 20px 15px;
 	font-weight: bold;
+	color: #00CFEF
 }
 .navbar-nav > li {
 	position: relative;
@@ -294,7 +295,7 @@ ul {
 	background: #00B2CD;
 }
 .bg-light {
-    background-color: #3666FE !important;
+    background-color: #fff !important;
     color: #fff
 }
 /*end menu*/
