@@ -144,6 +144,8 @@ ul {
 	text-align: center;
 	color: #078AE2;
 	font-weight: bold;
+	padding:20px;
+	font-family: Calibri;
 }
 /*Услуги конец*/
 
@@ -260,6 +262,7 @@ ul {
 }
 .navbar-nav > li > a{
 	padding: 20px 15px;
+	font-weight: bold;
 }
 .navbar-nav > li {
 	position: relative;
@@ -283,7 +286,6 @@ ul {
 	transition: .3s;
 }
 .navbar-nav > li:hover > a, .navbar-nav > li:focus > a{
-  color: #00CFEF;
 }
 .navbar-nav > li:hover ul, .navbar-nav > li:focus ul{
 	opacity: 1;
@@ -294,6 +296,10 @@ ul {
 	color: #fff;
 	background: #00B2CD;
 }
+.bg-light {
+    background-color: #00CFEF !important;
+    color: #fff
+}
 /*end menu*/
 
 	/*CAROUSEL*/
@@ -302,6 +308,12 @@ ul {
 }
 .carousel-inner .carousel-item{
 	/*height: 600px*/
+}
+.carousel-item img {
+	height:100%;
+}
+.carousel-item{
+	height: 500px
 }
 /*CAROUSEL END*/
 
