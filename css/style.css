@@ -26,20 +26,17 @@ ul {
   margin: 0;
 }
 .top{
-	background-color: #00D2F1;
+	background-color: white;
 }
 .topline{
 	padding: 10px 0px;
-	background-color: red;
+	background-color: white;
 }
 
 
 
 
 
-.header{
-	margin-bottom: 20px;
-}
 .box-img{
 	background-size: cover;
 	background-repeat: no-repeat;
