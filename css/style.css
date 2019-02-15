@@ -25,9 +25,12 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+.top{
+	background-color: #00D2F1;
+}
 .topline{
 	padding: 10px 0px;
+	background-color: red;
 }
 
 
