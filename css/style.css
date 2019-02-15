@@ -15,15 +15,6 @@ li{
 
 
 
-
-
-
-
-
-
-
-
-
 /*Услуги*/
 .radius{
 	border-radius:  10px;
@@ -36,7 +27,6 @@ li{
 	height: 150px;
 	overflow: hidden;
 }
-
 
 .obertka{
 	display: block;
@@ -90,34 +80,9 @@ li{
 	width: 100%;
 }
 .carousel-inner .carousel-item{
-	height: 600px	
+	/*height: 600px*/
 }
 /*CAROUSEL END*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
