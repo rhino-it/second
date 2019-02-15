@@ -294,7 +294,7 @@ ul {
 	background: #00B2CD;
 }
 .bg-light {
-    background-color: #00CFEF !important;
+    background-color: #3666FE !important;
     color: #fff
 }
 /*end menu*/
@@ -308,9 +308,6 @@ ul {
 }
 .carousel-item img {
 	height:100%;
-}
-.carousel-item{
-	height: 500px
 }
 /*CAROUSEL END*/
 
