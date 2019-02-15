@@ -225,12 +225,17 @@ ul {
 .foot_title{
 	font-weight: bold;
 	color: #fff;
-	font-size: 1.4em
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+.foot_title i{
+	border-bottom: 2px solid #fff;
+	padding-bottom: 5px;
+	font-style: normal;
 }
 .foooter a:hover{
 	text-decoration: none;
 	color: #1F45EF;
-	font-weight: bold
 }
 
 /*Футер конец*/
