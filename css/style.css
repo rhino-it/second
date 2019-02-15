@@ -244,3 +244,14 @@ li{
 }
 
 /*Футер конец*/
+
+	/*CAROUSEL*/
+.carousel-inner img{
+	width: 100%;
+}
+.carousel-inner .carousel-item{
+	/*height: 600px*/
+}
+/*CAROUSEL END*/
+
+
