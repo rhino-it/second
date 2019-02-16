@@ -172,8 +172,12 @@ ul {
 	color: #078AE2;
 	font-weight: bold;
 	padding:20px;
+<<<<<<< HEAD
 	font-family: Calibri: ;, bold;
 	border-bottom:2px solid skyblue;
+=======
+	font-family: Calibri;
+>>>>>>> b5679798fb70cfd354c67b09842a29cecdf1502a
 }
 /*Услуги конец*/
 
@@ -268,15 +272,9 @@ ul {
 }
 .foooter a:hover{
 	text-decoration: none;
-	/*color: #1F45EF;*/
+	color: #1F45EF;
 }
-.foooter i.anim_border{
-	font-style: normal;
-	transition: .3s;
-}
-.foooter i.anim_border:hover{	
-	border-bottom: 2px solid #fff;
-}
+
 /*Футер конец*/
 
 
@@ -301,7 +299,6 @@ ul {
 .navbar-nav > li > a{
 	padding: 20px 15px;
 	font-weight: bold;
-	color: #00CFEF
 }
 .navbar-nav > li:hover > a{
 	padding: 20px 15px;
@@ -324,7 +321,7 @@ ul {
 	background: #fff;
 	padding: 15px 20px;
 	width: 300px;
-	color: #00B2CD;
+	color: #000;
 	display: block;
 	transition: .3s;
 }
@@ -336,49 +333,7 @@ ul {
 	top: 165%;
 }
 .navbar-nav > li ul li:hover a{
-	color: #fff;
-	background: #00B2CD;
-}
-.bg-light {
-  background-color: #fff !important;
 	color: #00B2CD;
-}
-@media screen and (max-width: 1200px) {
-.navbar{
-	font-size: .9em;
-}
-}
-@media screen and (max-width: 990px) {
-.navbar{
-	font-size: 1.5em;
-}
-.navbar-nav > li > a {
-  padding-left: 0;
-}
-.navbar-nav > li ul {
-	opacity: 1;
-	visibility: visible;
-	position: static;
-  box-shadow: 0px 10px 20px transparent;
-}
-.navbar-nav > li:hover > a {
-  padding-left: 0;
-}
-.navbar-nav > li ul li:hover a {
-    color: #00B2CD;
-    background: #fff;
-    width: 100%;
-}
-.navbar-nav > li ul li a {
-  padding: 10px 20px;
-}
-.navbar-brand{
-	width: 18%;
-}
-@media screen and (max-width: 990px) {
-.navbar-brand{
-	width: 22%;
-}
 }
 /*end menu*/
 
@@ -392,9 +347,13 @@ ul {
 .carousel-item img {
 	height:100%;
 }
+.carousel-item{
+	height: 500px
+}
 /*CAROUSEL END*/
 
 
+<<<<<<< HEAD
 /*text box*/
 .text_block-img img{
 	width: 100%;
@@ -412,3 +371,5 @@ ul {
 	padding-bottom: 10px;
 }
 /*end of text box*/
+=======
+>>>>>>> b5679798fb70cfd354c67b09842a29cecdf1502a
