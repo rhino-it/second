@@ -30,22 +30,33 @@ ul {
 	color: #fff;
 	padding: 5px 0px;
 }
-.top a{
+/*.top a{
 	display: inline-block;
+}*/
+.leftline{
+	padding:  0px 5px;
 }
 .rightline{
 	text-align: right;
-	background-color: grey;
 	padding:  0px 5px;
 }
 .rightline a{
 	padding: 0px 10px;
-
+}
+.register{
+	border-left: 1px solid #fff;
+}
+.e-mail{
+	padding-left: 20px;
+}
+@media (max-width: 550px) {
+	.rightline{
+	text-align: center;
 }
 .leftline{
-	padding:  0px 5px;
+    text-align: center;
 }
-
+}
 
 
 
