@@ -26,37 +26,14 @@ ul {
   margin: 0;
 }
 .top{
-	background-color: #00D2F1;
-	color: #fff;
-	padding: 5px 0px;
+	background-color: white;
 }
-/*.top a{
-	display: inline-block;
-}*/
-.leftline{
-	padding:  0px 5px;
+.topline{
+	padding: 10px 0px;
+	background-color: white;
 }
-.rightline{
-	text-align: right;
-	padding:  0px 5px;
-}
-.rightline a{
-	padding: 0px 10px;
-}
-.register{
-	border-left: 1px solid #fff;
-}
-.e-mail{
-	padding-left: 20px;
-}
-@media (max-width: 550px) {
-	.rightline{
-	text-align: center;
-}
-.leftline{
-    text-align: center;
-}
-}
+
+
 
 
 
