@@ -26,13 +26,17 @@ ul {
   margin: 0;
 }
 .top{
-	background-color: white;
+	background-color: #00D2F1;
+	color: #fff;
+	padding: 5px 0px;
 }
-
-.topline{
-	padding: 10px 0px;
-	background-color: white;
-
+.leftline{
+	padding:  0px 5px;
+}
+.rightline{
+	text-align: right;
+	padding:  0px 5px;
+}
 .rightline a{
 	padding: 0px 10px;
 }
@@ -49,7 +53,6 @@ ul {
 .leftline{
     text-align: center;
 }
-
 }
 
 
