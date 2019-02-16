@@ -56,11 +56,6 @@ ul {
 .leftline{
     text-align: center;
 }
-
-.topline{
-	padding: 10px 0px;
-	background-color: #00CFEF;
-	color: #fff;
 }
 
 
@@ -170,9 +165,7 @@ ul {
 	color: #078AE2;
 	font-weight: bold;
 	padding:20px;
-	font-family: Calibri: ;, bold;
-	border-bottom:2px solid skyblue;
-
+	font-family: Calibri;
 }
 /*Услуги конец*/
 
@@ -347,23 +340,4 @@ ul {
 }
 /*CAROUSEL END*/
 
-
-
-/*text box*/
-.text_block-img img{
-	width: 100%;
-	border-top-left-radius: 15px;
-	border-bottom-right-radius: 55px;
-	box-shadow: 0 0 10px skyblue
-}
-.text_block{
-	color: #00CC9B;
-	font-family: Calibri;
-	font-weight: bold;
-	font-size: 1.1em
-}
-.text_box{
-	padding-bottom: 10px;
-}
-/*end of text box*/
 
