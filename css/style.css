@@ -294,7 +294,7 @@ ul {
 	background: #fff;
 	padding: 15px 20px;
 	width: 300px;
-	color: #000;
+	color: #00B2CD;
 	display: block;
 	transition: .3s;
 }
@@ -310,9 +310,45 @@ ul {
 	background: #00B2CD;
 }
 .bg-light {
-    background-color: #fff !important;
-    color: #fff
+  background-color: #fff !important;
 	color: #00B2CD;
+}
+@media screen and (max-width: 1200px) {
+.navbar{
+	font-size: .9em;
+}
+}
+@media screen and (max-width: 990px) {
+.navbar{
+	font-size: 1.5em;
+}
+.navbar-nav > li > a {
+  padding-left: 0;
+}
+.navbar-nav > li ul {
+	opacity: 1;
+	visibility: visible;
+	position: static;
+  box-shadow: 0px 10px 20px transparent;
+}
+.navbar-nav > li:hover > a {
+  padding-left: 0;
+}
+.navbar-nav > li ul li:hover a {
+    color: #00B2CD;
+    background: #fff;
+    width: 100%;
+}
+.navbar-nav > li ul li a {
+  padding: 10px 20px;
+}
+.navbar-brand{
+	width: 18%;
+}
+@media screen and (max-width: 990px) {
+.navbar-brand{
+	width: 22%;
+}
 }
 /*end menu*/
 
