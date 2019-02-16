@@ -26,36 +26,9 @@ ul {
   margin: 0;
 }
 .top{
-	background-color: #00D2F1;
-	color: #fff;
-	padding: 5px 0px;
+	background-color: white;
 }
-/*.top a{
-	display: inline-block;
-}*/
-.leftline{
-	padding:  0px 5px;
-}
-.rightline{
-	text-align: right;
-	padding:  0px 5px;
-}
-.rightline a{
-	padding: 0px 10px;
-}
-.register{
-	border-left: 1px solid #fff;
-}
-.e-mail{
-	padding-left: 20px;
-}
-@media (max-width: 550px) {
-	.rightline{
-	text-align: center;
-}
-.leftline{
-    text-align: center;
-}
+<<<<<<< HEAD
 <<<<<<< HEAD
 .topline{
 	padding: 10px 0px;
@@ -63,7 +36,14 @@ ul {
 	color: #fff;
 =======
 >>>>>>> 2a782836360f4ab8adc19b2ab7cbc7c6ec52ed9a
+=======
+.topline{
+	padding: 10px 0px;
+	background-color: white;
+>>>>>>> 51c3fc4d77eb898e0b79e085a945904eb8419c48
 }
+
+
 
 
 
