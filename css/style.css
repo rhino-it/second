@@ -375,6 +375,7 @@ ul {
 .navbar-brand{
 	width: 18%;
 }
+}
 @media screen and (max-width: 990px) {
 .navbar-brand{
 	width: 22%;
@@ -410,7 +411,7 @@ ul {
 	font-size: 1.1em
 }
 .text_box{
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 }
 /*end of text content*/
 
