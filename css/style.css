@@ -166,6 +166,7 @@ ul {
 	font-weight: bold;
 	padding:20px;
 	font-family: Calibri;
+	border-bottom:2px solid skyblue;
 }
 /*Услуги конец*/
 
@@ -260,9 +261,15 @@ ul {
 }
 .foooter a:hover{
 	text-decoration: none;
-	color: #1F45EF;
+	/*color: #1F45EF;*/
 }
-
+.foooter i.anim_border{
+	font-style: normal;
+	transition: .3s;
+}
+.foooter i.anim_border:hover{	
+	border-bottom: 2px solid #fff;
+}
 /*Футер конец*/
 
 
@@ -287,6 +294,7 @@ ul {
 .navbar-nav > li > a{
 	padding: 20px 15px;
 	font-weight: bold;
+	color: #00CFEF
 }
 .navbar-nav > li:hover > a{
 	padding: 20px 15px;
@@ -321,6 +329,12 @@ ul {
 	top: 165%;
 }
 .navbar-nav > li ul li:hover a{
+	color: #fff;
+	background: #00B2CD;
+}
+.bg-light {
+    background-color: #fff !important;
+    color: #fff
 	color: #00B2CD;
 }
 /*end menu*/
@@ -335,9 +349,23 @@ ul {
 .carousel-item img {
 	height:100%;
 }
-.carousel-item{
-	height: 500px
-}
 /*CAROUSEL END*/
 
 
+/*text content*/
+.text_block-img img{
+	width: 100%;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 55px;
+	box-shadow: 0 0 10px skyblue
+}
+.text_block{
+	color: #00CC9B;
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 1.1em
+}
+.text_box{
+	padding-bottom: 10px;
+}
+/*end of text content*/
