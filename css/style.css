@@ -28,19 +28,9 @@ ul {
 .top{
 	background-color: white;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.topline{
-	padding: 10px 0px;
-	background-color: #00CFEF;
-	color: #fff;
-=======
->>>>>>> 2a782836360f4ab8adc19b2ab7cbc7c6ec52ed9a
-=======
 .topline{
 	padding: 10px 0px;
 	background-color: white;
->>>>>>> 51c3fc4d77eb898e0b79e085a945904eb8419c48
 }
 
 
@@ -152,12 +142,8 @@ ul {
 	color: #078AE2;
 	font-weight: bold;
 	padding:20px;
-<<<<<<< HEAD
-	font-family: Calibri: ;, bold;
-	border-bottom:2px solid skyblue;
-=======
 	font-family: Calibri;
->>>>>>> b5679798fb70cfd354c67b09842a29cecdf1502a
+	border-bottom:2px solid skyblue;
 }
 /*Услуги конец*/
 
@@ -252,9 +238,15 @@ ul {
 }
 .foooter a:hover{
 	text-decoration: none;
-	color: #1F45EF;
+	/*color: #1F45EF;*/
 }
-
+.foooter i.anim_border{
+	font-style: normal;
+	transition: .3s;
+}
+.foooter i.anim_border:hover{	
+	border-bottom: 2px solid #fff;
+}
 /*Футер конец*/
 
 
@@ -279,6 +271,7 @@ ul {
 .navbar-nav > li > a{
 	padding: 20px 15px;
 	font-weight: bold;
+	color: #00CFEF
 }
 .navbar-nav > li:hover > a{
 	padding: 20px 15px;
@@ -313,6 +306,12 @@ ul {
 	top: 165%;
 }
 .navbar-nav > li ul li:hover a{
+	color: #fff;
+	background: #00B2CD;
+}
+.bg-light {
+    background-color: #fff !important;
+    color: #fff
 	color: #00B2CD;
 }
 /*end menu*/
@@ -327,14 +326,10 @@ ul {
 .carousel-item img {
 	height:100%;
 }
-.carousel-item{
-	height: 500px
-}
 /*CAROUSEL END*/
 
 
-<<<<<<< HEAD
-/*text box*/
+/*text content*/
 .text_block-img img{
 	width: 100%;
 	border-top-left-radius: 15px;
@@ -350,6 +345,4 @@ ul {
 .text_box{
 	padding-bottom: 10px;
 }
-/*end of text box*/
-=======
->>>>>>> b5679798fb70cfd354c67b09842a29cecdf1502a
+/*end of text content*/
