@@ -28,9 +28,28 @@ ul {
 .top{
 	background-color: white;
 }
+
 .topline{
 	padding: 10px 0px;
 	background-color: white;
+
+.rightline a{
+	padding: 0px 10px;
+}
+.register{
+	border-left: 1px solid #fff;
+}
+.e-mail{
+	padding-left: 20px;
+}
+@media (max-width: 550px) {
+	.rightline{
+	text-align: center;
+}
+.leftline{
+    text-align: center;
+}
+
 }
 
 
@@ -143,7 +162,9 @@ ul {
 	font-weight: bold;
 	padding:20px;
 	font-family: Calibri;
+
 	border-bottom:2px solid skyblue;
+
 }
 /*Услуги конец*/
 
@@ -329,6 +350,7 @@ ul {
 /*CAROUSEL END*/
 
 
+
 /*text content*/
 .text_block-img img{
 	width: 100%;
@@ -346,3 +368,4 @@ ul {
 	padding-bottom: 10px;
 }
 /*end of text content*/
+
