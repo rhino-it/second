@@ -26,15 +26,42 @@ ul {
   margin: 0;
 }
 .top{
-	background-color: white;
+	background-color: #00D2F1;
+	color: #fff;
+	padding: 5px 0px;
 }
+/*.top a{
+	display: inline-block;
+}*/
+.leftline{
+	padding:  0px 5px;
+}
+.rightline{
+	text-align: right;
+	padding:  0px 5px;
+}
+.rightline a{
+	padding: 0px 10px;
+}
+.register{
+	border-left: 1px solid #fff;
+}
+.e-mail{
+	padding-left: 20px;
+}
+@media (max-width: 550px) {
+	.rightline{
+	text-align: center;
+}
+.leftline{
+    text-align: center;
+}
+
 .topline{
 	padding: 10px 0px;
 	background-color: #00CFEF;
 	color: #fff;
 }
-
-
 
 
 
@@ -145,6 +172,7 @@ ul {
 	padding:20px;
 	font-family: Calibri: ;, bold;
 	border-bottom:2px solid skyblue;
+
 }
 /*Услуги конец*/
 
@@ -239,15 +267,9 @@ ul {
 }
 .foooter a:hover{
 	text-decoration: none;
-	/*color: #1F45EF;*/
+	color: #1F45EF;
 }
-.foooter i.anim_border{
-	font-style: normal;
-	transition: .3s;
-}
-.foooter i.anim_border:hover{	
-	border-bottom: 2px solid #fff;
-}
+
 /*Футер конец*/
 
 
@@ -272,7 +294,6 @@ ul {
 .navbar-nav > li > a{
 	padding: 20px 15px;
 	font-weight: bold;
-	color: #00CFEF
 }
 .navbar-nav > li:hover > a{
 	padding: 20px 15px;
@@ -307,12 +328,6 @@ ul {
 	top: 165%;
 }
 .navbar-nav > li ul li:hover a{
-	color: #fff;
-	background: #00B2CD;
-}
-.bg-light {
-    background-color: #fff !important;
-    color: #fff
 	color: #00B2CD;
 }
 /*end menu*/
@@ -327,7 +342,11 @@ ul {
 .carousel-item img {
 	height:100%;
 }
+.carousel-item{
+	height: 500px
+}
 /*CAROUSEL END*/
+
 
 
 /*text box*/
@@ -347,3 +366,4 @@ ul {
 	padding-bottom: 10px;
 }
 /*end of text box*/
+
