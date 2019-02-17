@@ -277,6 +277,28 @@ ul {
 .foooter i.anim_border:hover{	
 	border-bottom: 2px solid #fff;
 }
+
+
+.footer h3{
+	margin-bottom: 0px;
+}
+.div{
+	animation: mymove 3s infinite;
+}
+/*@keyframes mymove {
+  from 
+  0% {
+  	transform: scale(1);
+  	color: #fff;
+  	font-size: 1em;
+}
+  to 50% {
+  	transform: scale(1.1);
+  	background-color:  #fff; 
+  	color: #0072EF;
+  	font-size: 1.3em;
+  	}
+}*/
 /*Футер конец*/
 
 
@@ -349,6 +371,9 @@ ul {
 }
 }
 @media screen and (max-width: 990px) {
+	.navbar-nav > li ul li a{
+	width: 100%;
+}
 .navbar{
 	font-size: 1.5em;
 }
@@ -414,4 +439,7 @@ ul {
 	padding-bottom: 30px;
 }
 /*end of text content*/
+
+
+
 
