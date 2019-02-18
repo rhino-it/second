@@ -60,8 +60,13 @@ ul {
     text-align: center;
 }
 }
-
-
+.modal-dialog {
+  z-index: 1050;
+  width: 600px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 
 
