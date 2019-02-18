@@ -481,6 +481,10 @@ ul {
 	padding: 3px;
 	font-size: 12px;
 	width: 200px
-
+}
+@media only screen and (max-width: 590px) {
+	#code_inp{
+		display: block;
+	}
 }
 /*//RESULTS*/
