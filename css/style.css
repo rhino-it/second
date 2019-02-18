@@ -542,3 +542,32 @@ ul {
 	/*border: 1px solid red*/
 }
 /*//RESULTS*/
+
+/*PRICE*/
+ .layer {
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    width: 500px; /* Ширина блока */
+    height: 250px; /* Высота блока */
+    padding: 5px; /* Поля вокруг текста */
+    border: solid 3px skyblue; /* Параметры рамки */
+    border-top-left-radius: 20px
+   }
+   .layer div{
+   	width: 100%;
+   	font-family: Calibri;
+   	font-size: 1.15rem;
+   	font-weight: bold;
+   	padding: 5px
+   }
+   .layer a{
+   	color: #333;
+   	transition: .19s ease-in
+   }
+   .layer a:hover{
+	color: skyblue
+   }
+   .layer table td{
+   	width: 50%;
+   	border-bottom: 2px solid skyblue
+   }
+/*END OF PRICE PAGE*/
