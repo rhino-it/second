@@ -52,17 +52,19 @@ ul {
 	text-align: center;
 
 }
-.e-mail{
-	display: block;
 
-}
 .leftline{
     text-align: center;
 }
 }
-
-
-
+/*.modal-dialog {
+  z-index: 1050;
+  width: 600px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+*/
 
 
 .box-img{
@@ -306,6 +308,21 @@ ul {
 
 
 /*menu*/
+.fixed-box {
+    height: 60px;
+}
+.fixed-div {
+    height: 60px;
+    z-index: 100000000;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+}
+.bg-light {
+  background-color: #fff !important;
+	color: #00B2CD;
+}
 .navbar-brand{
 	width: 12%;
 }
@@ -313,9 +330,6 @@ ul {
 	font-size: 1.2em;
 	color: #5F5F5F;
 	padding: 10px;
-}
-.bg-light {
-    background-color: #fff !important;
 }
 .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
 	background: transparent;
@@ -326,7 +340,6 @@ ul {
 	color: #00CFEF
 }
 .navbar-nav > li:hover > a{
-	padding: 20px 15px;
 	color: #00CFEF;
 }
 .navbar-nav > li {
@@ -338,7 +351,7 @@ ul {
 	visibility: hidden;
 	transition: .3s;
 	position: absolute;
-	z-index: 1;
+	z-index: 9999;
 	top: 250%;	left: 0%;
 	box-shadow: 0px 10px 20px #ddd;
 }
@@ -350,8 +363,6 @@ ul {
 	display: block;
 	transition: .3s;
 }
-.navbar-nav > li:hover > a, .navbar-nav > li:focus > a{
-}
 .navbar-nav > li:hover ul, .navbar-nav > li:focus ul{
 	opacity: 1;
 	visibility: visible;
@@ -361,30 +372,27 @@ ul {
 	color: #fff;
 	background: #00B2CD;
 }
-.bg-light {
-  background-color: #fff !important;
-	color: #00B2CD;
-}
 @media screen and (max-width: 1200px) {
 .navbar{
 	font-size: .9em;
 }
 }
 @media screen and (max-width: 990px) {
-	.navbar-nav > li ul li a{
-	width: 100%;
+.navbar-nav > li:hover ul, .navbar-nav > li:focus ul{
+	opacity: 0;
+	visibility: hidden;
+	top: 165%;
+}	
+.navbar-nav > li ul li a{
+	width: 100%
 }
 .navbar{
 	font-size: 1.5em;
 }
 .navbar-nav > li > a {
   padding-left: 0;
-}
-.navbar-nav > li ul {
-	opacity: 1;
-	visibility: visible;
-	position: static;
-  box-shadow: 0px 10px 20px transparent;
+  display: block;
+  padding: 10px 0;
 }
 .navbar-nav > li:hover > a {
   padding-left: 0;
@@ -392,7 +400,6 @@ ul {
 .navbar-nav > li ul li:hover a {
     color: #00B2CD;
     background: #fff;
-    width: 100%;
 }
 .navbar-nav > li ul li a {
   padding: 10px 20px;
@@ -401,9 +408,15 @@ ul {
 	width: 18%;
 }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 500px) {
 .navbar-brand{
 	width: 22%;
+}
+.fixed-box {
+    height: 65px;
+}
+.fixed-div {
+    height: auto;
 }
 }
 
@@ -541,11 +554,90 @@ ul {
 }
 /*//RESULTS*/
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 05b5f6e00c87e191f070e8108e6660cc4811369e
+/*PRICE*/
+ .layer {
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    width: 400px; /* Ширина блока */
+    height: 400px; /* Высота блока */
+    padding: 5px; /* Поля вокруг текста */
+    border: solid 3px skyblue; /* Параметры рамки */
+    border-top-left-radius: 20px
+   }
+   .layer1 {
+    width: 550px; /* Ширина блока */
+    height: 400px; /* Высота блока */
+    padding: 5px; /* Поля вокруг текста */
+    border: solid 3px skyblue; /* Параметры рамки */
+    border-top-left-radius: 20px
+   }
+   .layer div{
+   	width: 100%;
+   	font-family: Calibri;
+   	font-size: 1.15rem;
+   	font-weight: bold;
+   	padding: 5px
+   }
+   .layer a{
+   	color: #333;
+   	transition: .19s ease-in
+   }
+   .layer,.layer1 a:hover{
+	color: skyblue
+   }
+   .layer table td{
+   	width: 50%;
+   	border-bottom: 2px solid skyblue
+   }
+   .layer1 table td{
+   	width: 50%;
+   	border-bottom: 2px solid skyblue
+   }
+   .table1{
+   	width: 40%;
+   	float: left;
+   	padding-top: 20px;
+   	padding-bottom: 20px;
+   }
+   .table2{
+   	width: 60%;
+   	float: left;
+   	padding-left: 60px;
+   	padding-top: 20px;
+   	padding-bottom: 20px;
+   }
+   .layer1 h5{
+   	color: #00CFEF;
+   	font-family: Calibri;
+   	font-weight: bold;
+   	padding: 10px;
+   	border-bottom: 2px solid #00CFEF;
+   	font-size: 1.1rem
+   }
+   .res{
+   	color: #333;
+   	padding: 5px;
+   	font-family: Calibri;
+   	font-weight: bold;
+   	font-size: 1.1rem;
+   	border:2px solid transparent;
+   	border-bottom: 2px dotted #00CFEF;
+   }
+   .res span{
+   	color: #aaa;
+   	font-size: 1rem
+   }
+    .scroll{
+   	overflow: scroll;
+   	width: 100%;
+   	height: 250px;
+   }
+   .grey{
+   	color: #00CFEF;
+   	font-weight: bold;
+   	border-bottom: 2px dashed #00CFEF;
+   	padding-bottom: 3px;
+   }
+/*END OF PRICE PAGE*/
 /*recipes*/
 .recipes{
 	display: flex;
@@ -591,42 +683,6 @@ ul {
 	font-weight: bold;
 }
 .sec1 .scroll h1{
-	color: blue;
-	font-size: 1em;
-	font-weight: bold;
+	color: ;
 }
 /*recipse end*/
-=======
-/*PRICE*/
- .layer {
-    overflow: scroll; /* Добавляем полосы прокрутки */
-    width: 500px; /* Ширина блока */
-    height: 250px; /* Высота блока */
-    padding: 5px; /* Поля вокруг текста */
-    border: solid 3px skyblue; /* Параметры рамки */
-    border-top-left-radius: 20px
-   }
-   .layer div{
-   	width: 100%;
-   	font-family: Calibri;
-   	font-size: 1.15rem;
-   	font-weight: bold;
-   	padding: 5px
-   }
-   .layer a{
-   	color: #333;
-   	transition: .19s ease-in
-   }
-   .layer a:hover{
-	color: skyblue
-   }
-   .layer table td{
-   	width: 50%;
-   	border-bottom: 2px solid skyblue
-   }
-/*END OF PRICE PAGE*/
-<<<<<<< HEAD
->>>>>>> bd427794e9cf073415d22cc99995e4ad45d23696
-=======
-
->>>>>>> 05b5f6e00c87e191f070e8108e6660cc4811369e
