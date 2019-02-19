@@ -41,6 +41,10 @@ $(function(){
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 05b5f6e00c87e191f070e8108e6660cc4811369e
 var castle = false;
 if ($(window).width()<990) {
 	castle = true;
@@ -48,9 +52,17 @@ if ($(window).width()<990) {
 else {
 	castle = false
 }
+<<<<<<< HEAD
 =======
 //$('#openBtn').click(function(){
 //$('#myModal').modal({show:true})
 //});
 >>>>>>> bd427794e9cf073415d22cc99995e4ad45d23696
+=======
+
+//$('#openBtn').click(function(){
+//$('#myModal').modal({show:true})
+//});
+
+>>>>>>> 05b5f6e00c87e191f070e8108e6660cc4811369e
 
