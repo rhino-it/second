@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Получить результаты</title>
+	<title>Прайс-лист</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -97,52 +97,40 @@
 	<div class="content">
 		<div class="container">
 			<div class="row">
-				<div class="results">
-					<h3>Получить результаты исследования</h3>
-						<span class="results_inf">
-						<p>Введите семизначное КОДОВОЕ СЛОВО, указанное в Вашем Бланке заказа.</p>
-						<p>Кодовое слово может состоять только из одних цифр или цифр и букв латинского алфавита. (Кодовое слово введите без учета написания прописных и заглавных букв). Например, 1597346 или GR759YR.</p>
-					<table>
-						<tr>
-						<td class="r_first">
-							<span>Кодовое слово</span></td>
-							<td><span class="inp"><input id="code" type="text" placeholder="Введите кодовое слово"></span></td>
-						
-					</tr>
-					<tr>
-						<td class="r_first">Получить результаты на почту</td>
-						<td class="r_second"><span class="check_box"><input type = 'checkbox' id = 'cb1' onchange = 'showOrHide("cb1", "cat1");'/></span></td>
-					</tr>
-					<tr>
-						<td class="r_first"></td>
-						<td class="r_second"><div id = 'cat1' style = 'display: none;'><input type="text" placeholder="Ваша почта" id="email"></div></td>
-					</tr>
-					<tr>
-						<td class="r_first"><span class="capt"><img src="images/загружено.gif" alt=""></span></td>
-						<td class="r_second"><input type="text" placeholder="Введите код указанный на картинке" id="code_inp"></td>
-						<td><input type="submit"></td>
-					</tr>
-					</table>
-					</span>
+				<div class="price">
+					<div class="results">
+						<h3>Цены на различные обследования</h3>
+					</div>
+					<div>
+						<p><select id="cat_select">
+    <option disabled selected>Выбор</option>
+    <option>Проверка 1</option>
+    <option>Проверка 2</option>
+   </select></p>
+						<div class="layer">
+							<table>
+								<tr>
+									<td><a href=""><div class="ld">Результат 1</div></a></td>
+									<td>Цена 1000$</td>
+									<td><input type="checkbox"></td>
+								</tr>
+								<tr>
+									<td><a href=""><div class="ld">Результат 2</div></a></td>
+									<td>Цена 2000$</td>
+									<td><input type="checkbox"></td>
+								</tr>
+								<tr>
+									<td><a href=""><div class="ld">Результат 3</div></a></td>
+									<td>Цена 3000$</td>
+									<td><input type="checkbox"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-$(document).ready(function(){
- $("input#check").change(function(){
-
-  if ($(this).attr("checked")) {
-      $('#').fadeIn().show();
-      return;
-  } else {
-      $('#hide').fadeOut(300); 
-  }
-
- });
-})
-</script>
-
 
 
 </div>

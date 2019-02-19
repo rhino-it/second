@@ -90,9 +90,11 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</div>
+		</nav>
+	</div>
 		</div>
 	</nav>
-</div>
+<!-- </div> -->
 
 
 
@@ -369,6 +371,49 @@
 
 					<script src="js/jquery-3.3.1.js"></script>
 					<script src="js/bootstrap.js"></script>				
+						<script>
+		
+var h_hght = 150; // высота шапки
+var h_mrg = 10;    // отступ когда шапка уже не видна
+var h_top = 0;    
+var elem = $('#top_nav');
+             
+$(function(){
+ 
+     var top = $(this).scrollTop();
+     
+    if(top > h_hght){
+        elem.css('top', h_mrg);
+
+    }              
+    $(window).scroll(function(){
+        top = $(this).scrollTop();
+         if ($(window).width()>767) {
+        if (top+h_mrg < h_hght ) {
+            elem.css('top', (h_hght-top-h_top));
+            // elem.css('background-color', '#fff');
+            // elem.css('color', '#fff');
+           $('#top_nav .navbar-collapse').removeClass('menucollapse')
+            
+        } else {
+            elem.css('top', h_mrg);
+            // elem.css('background-color', '#253B80');
+            // elem.css('color', 'white');
+             $('#top_nav .navbar-collapse').addClass('menucollapse')
+        }}
+        else elem.css('top', h_mrg);
+        
+    });
+
+ window.onresize=function(){
+       if ($(window).width()<768){
+        elem.css('top', h_mrg);
+    } else {
+        elem.css('top', (h_hght+top));
+    }
+}
+});
+	</script>
 				</body>
 				</html>
 
