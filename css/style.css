@@ -57,17 +57,19 @@ ul {
 	text-align: center;
 
 }
-.e-mail{
-	display: block;
 
-}
 .leftline{
     text-align: center;
 }
 }
-
-
-
+/*.modal-dialog {
+  z-index: 1050;
+  width: 600px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+*/
 
 
 .box-img{

@@ -42,6 +42,7 @@ $(document).ready(function($) {
 });
 
 
+<<<<<<< HEAD
 
 var castle = false;
 if ($(window).width()<990) {
@@ -50,6 +51,11 @@ if ($(window).width()<990) {
 else {
 	castle = false
 }
+=======
+//$('#openBtn').click(function(){
+//$('#myModal').modal({show:true})
+//});
+>>>>>>> a6215ca8cdc3540eb11877bf74e95ee1158c66ed
 
 if (castle==true) {
 	var a=false;
