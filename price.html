@@ -3,24 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Medical Clinic</title>
+	<title>Прайс-лист</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/wow.min.js"></script>
-	<script src="js/jquery-3.3.1.js"></script>
 	<script>
 		new WOW().init();
 	</script>
+	<script type="text/javascript">
+  function showOrHide(cb, cat) {
+    cb = document.getElementById(cb);
+    cat = document.getElementById(cat);
+    if (cb.checked) cat.style.display = "block";
+    else cat.style.display = "none";
+  }
+</script>
 </head>
 
 <body>
-<!-- 	<div style="position: fixed; right: 0px; top: 500px; z-index: 5000;" >
-	<a href="tel:+996771467964" style="display: inline-block; text-align: center;vertical-align: middle; background-color: #0072EF; border-radius: 50%; width: 50px; height: 50px; color: #fff; font-size: 1em;" class="div">
-		<i class="fa fa-phone" style="line-height: 50px; "></i>
-	</a>
-	</div> -->
+	
 	<div class="header">
 		<div class="top">
 			<div class="container">
@@ -45,39 +48,39 @@
 
 		</div>
 	</div>
-	<div class="menu fixed-box">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-div">
+	<div class="menu default" id="menu">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">						
-				<a class="navbar-brand" href="#"><img src="files/logo2.png" alt=""></a>
+				<a class="navbar-brand" href="index.html"><img src="files/logo2.png" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto" id="menu_click">
+					<ul class="navbar-nav ml-auto">
 						<li class="active"><a href="#">Главная</a></li>
-						<li id="q1"><a onclick="menu_click_js1()" href="#">О MK Medical Clinic</a>
-							<ul id="menu_1">
+						<li><a href="#">О MK Medical Clinic</a>
+							<ul>
 								<li><a href="">Коллектив</a></li>
 								<li><a href="">Время работы</a></li>
 							</ul>
 						</li>
-						<li><a onclick="menu_click_js2()" href="#">Услуги</a>
-							<ul id="menu_2">
+						<li><a href="#">Услуги</a>
+							<ul>
 								<li><a href="">Ультразвуковая диагностика</a></li>
 								<li><a href="">Физиотерапия</a></li>
 								<li><a href="">Консультация врача</a></li>
 								<li><a href="">Обучение </a></li>
 							</ul>
 						</li>
-						<li onclick="menu_click_js()"><a href="#">Программы</a>
-							<ul id="menu_2">
+						<li><a href="#">Программы</a>
+							<ul>
 								<li><a href="">Комплекс для будущих мам</a></li>
 								<li><a href="">Комплекс для пенсионеров</a></li>
 								<li><a href="">Комплекс для детей дошкольного возраста</a></li>
 							</ul>
 						</li>
-						<li onclick="menu_click_js()"><a href="#">Обучение (образование)</a>
-							<ul id="menu_2">
+						<li><a href="#">Обучение (образование)</a>
+							<ul>
 								<li><a href="">Курсы подготовки УЗ специалистов</a></li>
 								<li><a href="">Курсы повышения квалификации для специалистов УЗ-диагностики</a></li>
 							</ul>
@@ -85,43 +88,59 @@
 						<li><a href="#">Прайс</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
-
 				</div>
 			</div>
 		</nav>
 	</div>
 
-<div class="container">
-		<div class="recipes">
-			<div class="sec1">
-				<select name="" id="">
-							<option value="" selected>Выберите категорию анализа</option>
-							<option value="">item1</option>
-							<option value="">item2</option>
-							<option value="">item3</option>
-							<option value="">item4</option>
-							<option value="">item5</option>
-						</select>
-						<p>Все анализы (<span>647</span>)</p>		
-						<div class="scroll">
-							<h1>Диагностика анемий</h1>
-							<div>
-								<span>Железо</span>
-								<span>280 сом</span>
-								<input type="checkbox">
-							</div>
+
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="price">
+					<div class="results">
+						<h3>Цены на различные обследования</h3>
+					</div>
+					<div>
+						<p><select id="cat_select">
+    <option disabled selected>Выбор</option>
+    <option>Проверка 1</option>
+    <option>Проверка 2</option>
+   </select></p>
+						<div class="layer">
+							<table>
+								<tr>
+									<td><a href=""><div class="ld">Результат 1</div></a></td>
+									<td>Цена 1000$</td>
+									<td><input type="checkbox"></td>
+								</tr>
+								<tr>
+									<td><a href=""><div class="ld">Результат 2</div></a></td>
+									<td>Цена 2000$</td>
+									<td><input type="checkbox"></td>
+								</tr>
+								<tr>
+									<td><a href=""><div class="ld">Результат 3</div></a></td>
+									<td>Цена 3000$</td>
+									<td><input type="checkbox"></td>
+								</tr>
+							</table>
 						</div>
-			</div>
-			<div class="sec2">
-				
-			</div>
-			<div class="sec3">
-				
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
+
+
 </div>
 
 
+<div class="udner_content">
+	<div class="smthngs">
+
+	</div>
+</div>
 <div class="footer">
 	<div class="container">
 		<h3 style="color: #fff;letter-spacing: 5px">Medical Clinic</h3>
@@ -243,10 +262,9 @@
 
 
 
-					
-					<script src="js/bootstrap.js"></script>				
+					<script src="js/jquery-3.3.1.js"></script>
 					<script src="js/index.js"></script>
+					<script src="js/bootstrap.js"></script>				
 				</body>
 				</html>
-
 
