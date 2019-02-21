@@ -718,6 +718,99 @@ ul {
   background-repeat: repeat-x;
   background-image: url(../files/a-torn.png);
 }
+<<<<<<< HEAD
+.result-recipe h1{
+	font-size: 1.3em;
+	color: #023372;
+	font-weight: bold;
+}
+.q1-recipe{
+	color: #023372;
+	font-weight: bold;
+}
+.result-cotntent{
+	padding: 10px 0;
+	margin: 10px 0;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+		  overflow: scroll; 
+    height: 150px;
+    overflow-x: hidden; 
+}
+.total table{
+	width: 100%;
+	font-size: 1.3em;
+}
+.total .tab{
+	text-align: left;
+}
+.total th{
+	text-align: right;
+	padding-top: 10px;
+}
+.total button{
+	background: #023372;
+	color: #fff;
+	border: 0px;
+	padding: 6px 13px;
+}
+/*recipse end*/
+
+/*UZI PAGE*/
+.main_img{
+	width: 100%;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-top-left-radius: 20px;
+}
+.uzi .title{
+	color: #00D2F1;
+	font-weight: bold;
+	font-family: Calibri;
+	font-size: 2rem;
+	padding: 15px 0
+}
+.uzi .text{
+	padding: 20px 5px;
+	font-family: Calibri;
+	font-size: 1rem;
+	background: #00D2F1;
+	color: #fff;
+	margin:10px 0;
+	border-top-left-radius: 15px;
+}
+.uzi .med{
+	padding: 20px 0
+}
+.uzi .med .med_photo img{
+	width: 100%;
+}
+.uzi .med .med_photo{
+}
+.uzi .med .med_name{
+	color: #00D2F1;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: Calibri;
+}
+.uzi .med .med_name span{
+	border-bottom: 4px solid #00D2F1;
+	display: block;
+	text-align: center;
+}
+.uzi .med .med_name div{
+	font-size: 1.1rem;
+}
+.uzi .med .med_name div i.fa{
+	transition: .3s
+}
+.uzi .med .med_name div:hover i.fa{
+	color: red
+}
+/*END OF UZI PAGE*/
+=======
 .result-recipe h1 {
   font-size: 1.3em;
   color: #023372;
@@ -823,3 +916,4 @@ ul {
   border: 2px solid #007182;
 }
 /*doctors end*/
+>>>>>>> 7a3f6be90f2e92781787664b13b024cca2528f22
