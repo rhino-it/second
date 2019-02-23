@@ -11,7 +11,8 @@
 				</div>
 				<div class="col-xs-12 col-sm-6 ">
 					<div class="rightline">
-						<a href="<?php echo base_url().'pages/results/' ?>" target="blank">Получить результат</a>
+						<a href="<?php echo base_url().'Pages/recipes'; ?>">Сдать анализ</a>
+						<a href="<?php echo base_url().'Pages/results'; ?>">Получить результат</a>
 						<a href="" data-toggle="modal" data-target="#loginmodal" class="register">вход</a>
 					</div>
 				</div>
@@ -26,17 +27,17 @@
 	<div class="menu fixed-box">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-div">
 			<div class="container">						
-				<a class="navbar-brand" href="#"><img src="<?php echo base_url().'assets/files/logo2.png'; ?>" alt=""></a>
+				<a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url().'assets/files/logo2.png'; ?>" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto menu_click">
-						<li class="active"><a href="#">Главная</a></li>
+						<li class="active"><a href="<?php echo base_url(); ?>">Главная</a></li>
 						<li><a href="#">О MK Medical Clinic</a>
 							<ul class="q1">
-								<li><a href="">Коллектив</a></li>
-								<li><a href="">Время работы</a></li>
+								<li><a href="<?php echo base_url().'pages/staff';?>">Коллектив</a></li>
+								<li><a href="<?php echo base_url().'pages/schedule';?>">Время работы</a></li>
 							</ul>
 						</li>
 						<li><a href="#">Услуги</a>

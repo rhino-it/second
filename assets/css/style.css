@@ -864,6 +864,7 @@ ul {
   height: 540px;
   box-shadow: 0 0 10px #bababa;
   text-align: center;
+  cursor: pointer;
 }
 .paddding .content-doc .img {
   height: 300px;

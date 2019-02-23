@@ -12,8 +12,6 @@
 
 								<div class="picture" style="background-image: url('<? echo base_url().'assets/images/9.jpeg';?>');"></div>
 
-								<div class="picture" style="background-image: url('<?php echo base_url().'assets/files/9.jpeg';?>');"></div>
-
 							</div>
 							<h3>УЗИ органов брюшной полости</h3>
 						</a>
@@ -22,7 +20,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="radius">			
-						<a href="" class="obertka">
+						<a href="<?php echo base_url().'pages/uzi';?>" class="obertka">
 							<div class="framepicture">
 								<div class="picture" style="background-image: url('<?php echo base_url().'assets/images/6.jpg';?>');"></div>
 							</div>
@@ -32,12 +30,11 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="radius">			
-						<a href="" class="obertka">
+						<a href="<?php echo base_url().'pages/uzi';?>" class="obertka">
 							<div class="framepicture">
 
 								<div class="picture" style="background-image: url('<?php echo base_url().'assets/images/10.jpg';?>');"></div>
 
-								<div class="picture" style="background-image: url('<?php echo base_url().'assets/files/10.jpg';?>');"></div>
 
 							</div>
 							<h3>Эластография молочной железы</h3>
@@ -46,10 +43,8 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="radius">			
-						<a href="" class="obertka">
+						<a href="<?php echo base_url().'pages/uzi';?>" class="obertka">
 							<div class="framepicture">
-
-								<div class="picture" style="background-image: url('<?php echo base_url().'assets/images/7.jpg';?>');"></div>
 
 								<div class="picture" style="background-image: url('<?php echo base_url().'assets/files/7.jpg';?>');"></div>
 
@@ -60,7 +55,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="radius">			
-						<a href="" class="obertka">
+						<a href="<?php echo base_url().'pages/uzi';?>" class="obertka">
 							<div class="framepicture">
 								<div class="picture" style="background-image: url('<?php echo base_url().'assets/images/2.jpg';?>');"></div>
 							</div>
@@ -70,12 +65,11 @@
 				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="radius">			
-						<a href="" class="obertka">
+						<a href="<?php echo base_url().'pages/uzi';?>" class="obertka">
 							<div class="framepicture">
 
 								<div class="picture" style="background-image: url('<?php echo base_url().'assets/images/8.jpg';?>');"></div>
 
-								<div class="picture" style="background-image: url('<?php echo base_url().'assets/files/8.jpg';?>');"></div>
 
 							</div>
 							<h3>Физиотерапия</h3>

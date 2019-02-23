@@ -12,21 +12,21 @@
 					<!-- The slideshow -->
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="<?php echo base_url().'assets/files/4.jpg'; ?>" alt="">
+							<img src="<?php echo base_url().'assets/images/slider/4.jpg'; ?>" alt="">
 							<div class="carousel-caption">
 								<h3>Здоровый ребенек - счастливая семья !</h3>
 								<!-- <p>We had such a great time in LA!</p> -->
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img src="<?php echo base_url().'assets/files/66.jpg'; ?>" alt="">
+							<img src="<?php echo base_url().'assets/images/slider/66.jpg'; ?>" alt="">
 							<div class="carousel-caption">
 								<h3>Мы за здоровый образ жизни !</h3>
 								<!-- <p>We had such a great time in LA!</p> -->
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img src="<?php echo base_url().'assets/files/77.jpeg'; ?>" alt="">
+							<img src="<?php echo base_url().'assets/images/slider/77.jpeg'; ?>" alt="">
 							<div class="carousel-caption">
 								<h3>Правильное питание это не диета !</h3>
 								<!-- <p>We had such a great time in LA!</p> -->

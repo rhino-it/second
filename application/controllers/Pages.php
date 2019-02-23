@@ -57,4 +57,21 @@ class Pages extends CI_Controller {
 		$this->load->view('recipes_view');
 		$this->load->view('footer_view');
 	}
+
+	public function staff($id=0)
+	{
+		$this->load->model('Get_model');
+		$this->load->view('head_view');
+		$this->load->view('header_view');
+		$this->load->view('staff_view');
+		$this->load->view('footer_view');
+	}
+		public function doctor($id=0)
+	{
+		$this->load->model('Get_model');
+		$this->load->view('head_view');
+		$this->load->view('header_view');
+		$this->load->view('doctor_view');
+		$this->load->view('footer_view');
+	}
 }	
