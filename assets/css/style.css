@@ -300,6 +300,7 @@ ul {
   font-size: 1.2em;
   color: #5F5F5F;
   padding: 10px;
+  z-index: 20;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .navbar-nav > .active > a,
@@ -458,6 +459,7 @@ ul {
 }
 .results .capt {
   width: 200px;
+  height: 120px;
   display: block;
   border: 2px solid skyblue;
   margin-bottom: 20px;
@@ -717,99 +719,6 @@ ul {
   background-repeat: repeat-x;
   background-image: url(../files/a-torn.png);
 }
-<<<<<<< HEAD
-.result-recipe h1{
-	font-size: 1.3em;
-	color: #023372;
-	font-weight: bold;
-}
-.q1-recipe{
-	color: #023372;
-	font-weight: bold;
-}
-.result-cotntent{
-	padding: 10px 0;
-	margin: 10px 0;
-	border-top: 1px dotted #ccc;
-	border-bottom: 1px dotted #ccc;
-		  overflow: scroll; 
-    height: 150px;
-    overflow-x: hidden; 
-}
-.total table{
-	width: 100%;
-	font-size: 1.3em;
-}
-.total .tab{
-	text-align: left;
-}
-.total th{
-	text-align: right;
-	padding-top: 10px;
-}
-.total button{
-	background: #023372;
-	color: #fff;
-	border: 0px;
-	padding: 6px 13px;
-}
-/*recipse end*/
-
-/*UZI PAGE*/
-.main_img{
-	width: 100%;
-	height: 300px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	border-top-left-radius: 20px;
-}
- .title{
-	color: #00D2F1;
-	font-weight: bold;
-	font-family: Calibri;
-	font-size: 2rem;
-	padding: 15px 0
-}
-.uzi .text{
-	padding: 20px 5px;
-	font-family: Calibri;
-	font-size: 1rem;
-	background: #00D2F1;
-	color: #fff;
-	margin:10px 0;
-	border-top-left-radius: 15px;
-}
-.uzi .med{
-	padding: 20px 0
-}
-.uzi .med .med_photo img{
-	width: 100%;
-}
-.uzi .med .med_photo{
-}
-.uzi .med .med_name{
-	color: #00D2F1;
-	font-size: 2rem;
-	font-weight: bold;
-	font-family: Calibri;
-}
-.uzi .med .med_name span{
-	border-bottom: 4px solid #00D2F1;
-	display: block;
-	text-align: center;
-}
-.uzi .med .med_name div{
-	font-size: 1.1rem;
-}
-.uzi .med .med_name div i.fa{
-	transition: .3s
-}
-.uzi .med .med_name div:hover i.fa{
-	color: red
-}
-/*END OF UZI PAGE*/
-=======
 .result-recipe h1 {
   font-size: 1.3em;
   color: #023372;
@@ -864,7 +773,6 @@ ul {
   height: 540px;
   box-shadow: 0 0 10px #bababa;
   text-align: center;
-  cursor: pointer;
 }
 .paddding .content-doc .img {
   height: 300px;
@@ -916,41 +824,3 @@ ul {
   border: 2px solid #007182;
 }
 /*doctors end*/
-
-
-/*NEWS*/
-.news{
-	padding: 20px 0
-}
-.news .news-block{
-	transition: .4s
-}
-.news .news-img{
-	width: 100%;
-	height: 200px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover
-}
-.news-title{
-	color: #00D2F1;
-	font-family: Calibri;
-	font-weight: bold;
-	font-size: 1.3rem;
-	padding: 5px 10px;
-	border-bottom: 1px solid skyblue;
-}
-.news-text{
-	font-family: Calibri;
-	font-size: 12px;
-	text-align: justify;
-	padding: 5px 10px
-}
-.news-block:hover{
-	box-shadow: 0 0 8px #00D2F1;
-	transform: scale(1.02)
-}
-.nb{
-	width: 550px
-}
-/*ENF OF NEWS BLOCK*/
