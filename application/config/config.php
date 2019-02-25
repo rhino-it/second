@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'http://medic.kg';
+=======
+$config['base_url'] = 'http://clinica.kg';
+>>>>>>> 574ccaac22b386458ecd20fcf17bfc3a63d0a923
 
 /*
 |--------------------------------------------------------------------------

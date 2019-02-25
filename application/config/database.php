@@ -78,7 +78,11 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
+<<<<<<< HEAD
 	'database' => 'admin_aiti2',
+=======
+	'database' => 'kaf.kg',
+>>>>>>> 574ccaac22b386458ecd20fcf17bfc3a63d0a923
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
