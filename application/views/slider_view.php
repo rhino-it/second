@@ -17,7 +17,7 @@
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img src="<?php echo base_url().'assets/images/slider/4.jpg'; ?>" alt="">
-							<div class="carousel-caption">
+	 						<div class="carousel-caption">
 								<h3>Здоровый ребенек - счастливая семья !</h3>
 
 								<!-- <p>We had such a great time in LA!</p> -->
@@ -44,16 +44,16 @@
 					</div>
 
 					<!-- Left and right controls -->
-				</div>
-						</div>
-					</div>
-
 					<a class="carousel-control-prev" href="#demo" data-slide="prev">
 						<span class="carousel-control-prev-icon"></span>
 					</a>
 					<a class="carousel-control-next" href="#demo" data-slide="next">
 						<span class="carousel-control-next-icon"></span>
 					</a>
+				</div>
+						</div>
+					</div>
+
 
 
 				</div>
