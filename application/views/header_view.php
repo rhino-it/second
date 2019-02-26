@@ -42,7 +42,7 @@
 								<li <?php if  ($i==false) echo 'class="active"' ?> ><a href="<?php echo base_url(); ?>"><?php echo $m_menu['name_ru']; ?></a>
 											<ul class="q1">
 										<?php  foreach ($under_menu as $u_menu){ ?>
-													<li><a href="<?php echo base_url().'pages/staff';?>"><?php echo $u_menu['name_ru'];  ?></a>
+													<li><a href="<?php echo base_url().'pages/page/'.$u_menu['id'];?>"><?php echo $u_menu['name_ru'];  ?></a>
 													</li>
 												<?php } ?>
 											</ul>

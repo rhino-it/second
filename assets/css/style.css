@@ -824,3 +824,63 @@ ul {
   border: 2px solid #007182;
 }
 /*doctors end*/
+
+/*NEWS*/
+.news{
+  padding-top: 20px;
+}
+ .news .news-img{
+  background-size: cover;
+  background-position: center;
+ }
+ .news .news-img img{
+  width: 100%
+ }
+ .news-block{
+  transition: .4s;
+  padding: 5px
+ }
+ .news-block:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 6px #00CFEF
+ }
+ .news-block:hover .news-text{
+  border-top: 2px solid #00CFEF;
+ }
+ .news .news-text{
+  border-top: 2px solid transparent;
+  transition: .2s
+ }
+ .news .news-title{
+  font-family: Calibri;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #00CFEF;
+ }
+
+/*END OF NEWS*/
+
+/*SERVICE*/
+.service .title{
+  color: #00CFEF;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: Calibri;
+  text-align: center;
+}
+.service .box-img{
+  width: 100%;
+  height: 500px
+}
+.service .box-img img{
+  width: 100%;
+  height: 100%;
+}
+.service .text{
+  text-align: left;
+  border-top: 2px solid #00CFEF;
+  padding-top: 20px;
+  font-size: 1.1rem
+}
+
+/*ENF OF SERVICE*/
