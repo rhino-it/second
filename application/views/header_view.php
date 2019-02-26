@@ -33,36 +33,24 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto menu_click">
-						<li class="active"><a href="<?php echo base_url(); ?>">Главная</a></li>
-						<li><a href="#">О MK Medical Clinic</a>
-							<ul class="q1">
-								<li><a href="<?php echo base_url().'pages/staff';?>">Коллектив</a></li>
-								<li><a href="<?php echo base_url().'pages/schedule';?>">Время работы</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Услуги</a>
-							<ul class="q1">
-								<li><a href="">Ультразвуковая диагностика</a></li>
-								<li><a href="">Физиотерапия</a></li>
-								<li><a href="">Консультация врача</a></li>
-								<li><a href="">Обучение </a></li>
-							</ul>
-						</li>
-						<li><a href="#">Программы</a>
-							<ul class="q1">
-								<li><a href="">Комплекс для будущих мам</a></li>
-								<li><a href="">Комплекс для пенсионеров</a></li>
-								<li><a href="">Комплекс для детей дошкольного возраста</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Обучение (образование)</a>
-							<ul class="q1">
-								<li><a href="">Курсы подготовки УЗ специалистов</a></li>
-								<li><a href="">Курсы повышения квалификации для специалистов УЗ-диагностики</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Прайс</a></li>
-						<li><a href="#">Контакты</a></li>
+						<?php 
+						$i=false;
+						foreach ($main_menu as $m_menu){
+						 $under_menu = $this->Get_model->md_menu($m_menu['id']);
+						 ?>
+
+								<li <?php if  ($i==false) echo 'class="active"' ?> ><a href="<?php echo base_url(); ?>"><?php echo $m_menu['name_ru']; ?></a>
+											<ul class="q1">
+										<?php  foreach ($under_menu as $u_menu){ ?>
+													<li><a href="<?php echo base_url().'pages/staff';?>"><?php echo $u_menu['name_ru'];  ?></a>
+													</li>
+												<?php } ?>
+											</ul>
+								</li>
+
+						<?php
+						$i=true;
+							} ?>
 					</ul>
 
 				</div>
