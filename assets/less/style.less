@@ -137,8 +137,6 @@ ul {
 	height: 150px;
 	overflow: hidden;
 }
-
-
 .obertka{
 	display: block;
 	text-decoration: none !important;
@@ -181,9 +179,13 @@ ul {
 	font-weight: bold;
 	padding:20px;
 	font-family: Calibri;
-
 	border-bottom:2px solid skyblue;
-
+	& a{
+		float: right;
+		font-size: .6em;
+		vertical-align: bottom;
+		padding-top: 15px;
+	}
 }
 /*Услуги конец*/
 
@@ -850,3 +852,127 @@ ul {
 	}
 }
 /*doctors end*/
+
+/*NEWS*/
+.news{
+  padding-top: 20px;
+}
+ .news .news-img{
+  background-size: cover;
+  background-position: center;
+ }
+ .news .news-img img{
+  width: 100%
+ }
+ .news-block{
+  transition: .4s;
+  padding: 5px;
+  margin-bottom: 50px;
+ }
+ .news-block:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 6px #00CFEF
+ }
+ .news-block:hover .news-text{
+  border-top: 2px solid #00CFEF;
+ }
+ .news .news-text{
+  border-top: 2px solid transparent;
+  transition: .2s
+ }
+ .news .news-title{
+  font-family: Calibri;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #00CFEF;
+ }
+
+/*END OF NEWS*/
+
+/*SERVICE*/
+.service .title{
+  color: #00CFEF;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: Calibri;
+  text-align: center;
+}
+.service .box-img{
+  width: 100%;
+  height: 500px
+}
+.service .box-img img{
+  width: 100%;
+  height: 100%;
+}
+.service .text{
+  text-align: left;
+  border-top: 2px solid #00CFEF;
+  padding-top: 20px;
+  font-size: 1.1rem
+}
+
+/*ENF OF SERVICE*/
+
+/*UZI*/
+.uzi{
+  padding: 15px 0
+}
+.uzi .main_img img{
+  width: 100%;
+  border-top-right-radius: 25px
+}
+.uzi .main_img{
+  width: 100%
+}
+.uzi .text{
+  background-color: #00CFEF;
+  color: #fff;
+  font-family: Calibri;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 1rem
+}
+.uzi .title{
+  color: #00CFEF;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1.6rem
+}
+/*END OF UZI*/
+
+// pagination start
+.pagination_user{
+	text-align: center;
+	// margin: 30px 0;
+	height: 40px;
+	// border: 1px solid red;
+	& ul{
+		display: inline-block;
+		& li{
+			display: inline-block;
+			& a{
+				padding: 10px 20px;
+				background: @bl;
+				border: 1px solid #17BED8;	
+				color: #fff;
+				transition: .3s;
+				&:hover{
+					opacity: .5;
+				}
+			}
+			&:first-child a{
+				border-radius: 5px 0 0 5px;
+			}	
+			&:last-child a{
+				border-radius: 0px 5px 5px 0px;
+			}	
+			&.active{
+				opacity: .5;
+			}		
+		}
+	}
+}
+// pagination end

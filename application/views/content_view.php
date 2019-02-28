@@ -2,8 +2,8 @@
 	<div class="container">
 		<div class="row service">
 			<?php foreach ($inf as $inf): ?>
-			<div class="box-img">
-				<img src="<?php echo base_url().$inf['foto']?>" alt="">
+			<div class="box-img" style="background-image: url('<?php echo base_url().$inf['foto'];?>')">
+				<!-- <img src="<?php echo base_url().$inf['foto']?>" alt=""> -->
 			</div>
 			<div class="title">
 				<?php

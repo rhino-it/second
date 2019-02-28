@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 26 2019 г., 12:33
+-- Время создания: Фев 27 2019 г., 14:03
 -- Версия сервера: 5.5.41-log
 -- Версия PHP: 5.3.29
 
@@ -84,24 +84,24 @@ CREATE TABLE IF NOT EXISTS `ex_menu` (
 --
 
 INSERT INTO `ex_menu` (`id`, `sort`, `id_parent`, `id_page`, `url`, `target`, `name_kg`, `name_ru`, `name_en`) VALUES
-(83, 2, 1, 1, '', '0', 'ц', 'О МК Медикал Клиник ', 'Контакты'),
-(82, 1, 1, 1, 'http://vak1/pages/application', NULL, '', 'Главная', ''),
-(86, 5, 1, 1, 'http://vak1/pages/application', NULL, '', 'Услуги', ''),
-(87, 3, 1, 1, 'http://vak1/pages/application', NULL, '', 'Программы', ''),
-(88, 4, 1, 1, 'http://vak1/pages/application', NULL, '', 'Обучение', ''),
+(83, 2, 1, 1, '', NULL, NULL, 'О МК Медикал Клиник ', ''),
+(82, 1, 1, 1, '', NULL, NULL, 'Главная', ''),
+(86, 5, 1, 1, '', NULL, NULL, 'Услуги', ''),
+(87, 3, 1, 1, '', NULL, NULL, 'Программы', ''),
+(88, 4, 1, 1, '', NULL, NULL, 'Обучение', ''),
 (103, 0, 88, NULL, NULL, NULL, NULL, 'Курсы повышения квалификации специалистов УЗ-диагностики', ''),
 (102, 0, 88, NULL, NULL, NULL, NULL, 'Курсы подготовки УЗ специалистов', ''),
 (101, 0, 87, NULL, NULL, NULL, NULL, 'Комплекс для детей дошкольного возраста', ''),
-(93, 0, 83, NULL, NULL, NULL, NULL, 'Коллектив ', ''),
-(94, 0, 83, NULL, NULL, NULL, NULL, 'Время работы', ''),
-(95, 0, 86, NULL, NULL, NULL, NULL, 'Ультразвуковая диагностика', ''),
-(96, 0, 86, NULL, NULL, NULL, NULL, 'Физиотерапия', ''),
+(93, 0, 83, NULL, 'http://mkmc.kg/pages/staff', NULL, NULL, 'Коллектив ', ''),
+(94, 0, 83, NULL, 'http://mkmc.kg/pages/schedule', NULL, NULL, 'Время работы', ''),
+(95, 0, 86, NULL, 'http://mkmc.kg/pages/uzi', NULL, NULL, 'Ультразвуковая диагностика', ''),
+(96, 0, 86, NULL, 'http://mkmc.kg/pages/phizio', NULL, NULL, 'Физиотерапия', ''),
 (97, 0, 86, NULL, NULL, NULL, NULL, 'Консультация врача', ''),
 (98, 0, 86, NULL, NULL, NULL, NULL, 'Обучение', ''),
 (99, 0, 87, NULL, NULL, NULL, NULL, 'Комплекс для будущих мам', ''),
 (100, 0, 87, NULL, NULL, NULL, NULL, 'Комплекс для пенсионеров', ''),
-(84, 6, 1, 1, 'http://vak1/pages/application', NULL, '', 'Прайс', ''),
-(85, 7, 1, 1, 'http://vak1/pages/application', NULL, '', 'Контакты', ''),
+(84, 6, 1, 1, '', NULL, NULL, 'Прайс', ''),
+(85, 7, 1, 1, '', NULL, NULL, 'Контакты', ''),
 (1, 0, 0, NULL, NULL, NULL, NULL, 'Главное меню', '');
 
 -- --------------------------------------------------------
@@ -163,7 +163,15 @@ CREATE TABLE IF NOT EXISTS `ex_page` (
   `gallery_thumb` text CHARACTER SET utf8 NOT NULL,
   `gallery` text CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=cp1251 AUTO_INCREMENT=33 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=cp1251 AUTO_INCREMENT=97 ;
+
+--
+-- Дамп данных таблицы `ex_page`
+--
+
+INSERT INTO `ex_page` (`id`, `id_type_page`, `id_page_tema`, `id_user`, `user`, `address`, `vrem_ot`, `vrem_do`, `foto`, `foto_thumb`, `video`, `audio`, `url`, `log`, `stat`, `vrem`, `tema_kg`, `tema_ru`, `tema_en`, `page_text_kg`, `page_text_ru`, `page_text_en`, `key_text_kg`, `key_text_ru`, `key_text_en`, `gallery_thumb`, `gallery`) VALUES
+(95, 1, 0, 0, '', '', NULL, NULL, 'assets/files/7.jpg', '', NULL, '', '', 1, 0, NULL, 'Tema', 'Tema', 'Tema', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veritatis aut nemo modi sequi, eligendi magni! Eum veritatis rerum ipsam alias natus sapiente, expedita ex aperiam maiores perspiciatis pariatur eaque perferendis totam, velit tempore tenetur beatae distinctio vitae est asperiores ad, iusto soluta eveniet. Tenetur sunt blanditiis id itaque nostrum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veritatis aut nemo modi sequi, eligendi magni! Eum veritatis rerum ipsam alias natus sapiente, expedita ex aperiam maiores perspiciatis pariatur eaque perferendis totam, velit tempore tenetur beatae distinctio vitae est asperiores ad, iusto soluta eveniet. Tenetur sunt blanditiis id itaque nostrum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veritatis aut nemo modi sequi, eligendi magni! Eum veritatis rerum ipsam alias natus sapiente, expedita ex aperiam maiores perspiciatis pariatur eaque perferendis totam, velit tempore tenetur beatae distinctio vitae est asperiores ad, iusto soluta eveniet. Tenetur sunt blanditiis id itaque nostrum.', NULL, NULL, '', '', ''),
+(96, 1, 0, 0, '', '', NULL, NULL, 'assets/files/7.jpg', '', NULL, '', '', 1, 0, NULL, 'Tema', 'Tema', 'Tema', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veritatis aut nemo modi sequi, eligendi magni! Eum veritatis rerum ipsam alias natus sapiente, expedita ex aperiam maiores perspiciatis pariatur eaque perferendis totam, velit tempore tenetur beatae distinctio vitae est asperiores ad, iusto soluta eveniet. Tenetur sunt blanditiis id itaque nostrum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veritatis aut nemo modi sequi, eligendi magni! Eum veritatis rerum ipsam alias natus sapiente, expedita ex aperiam maiores perspiciatis pariatur eaque perferendis totam, velit tempore tenetur beatae distinctio vitae est asperiores ad, iusto soluta eveniet. Tenetur sunt blanditiis id itaque nostrum.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veritatis aut nemo modi sequi, eligendi magni! Eum veritatis rerum ipsam alias natus sapiente, expedita ex aperiam maiores perspiciatis pariatur eaque perferendis totam, velit tempore tenetur beatae distinctio vitae est asperiores ad, iusto soluta eveniet. Tenetur sunt blanditiis id itaque nostrum.', NULL, NULL, '', '', '');
 
 -- --------------------------------------------------------
 
