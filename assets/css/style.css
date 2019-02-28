@@ -884,3 +884,32 @@ ul {
 }
 
 /*ENF OF SERVICE*/
+
+/*UZI*/
+.uzi{
+  padding: 15px 0
+}
+.uzi .main_img img{
+  width: 100%;
+  border-top-right-radius: 25px
+}
+.uzi .main_img{
+  width: 100%
+}
+.uzi .text{
+  background-color: #00CFEF;
+  color: #fff;
+  font-family: Calibri;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 1rem
+}
+.uzi .title{
+  color: #00CFEF;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1.6rem
+}
+/*END OF UZI*/

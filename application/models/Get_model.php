@@ -14,4 +14,15 @@ class Get_model extends CI_Model {
             $query = $this->db->get('ex_page');
             return $query->result_array();
     }
+    function news($id) {
+            $query = $this->db->where('id_type_page', 1);
+            $query = $this->db->get('ex_page');
+            return $query->result_array();
+    }
+    function main_page_news() {
+            $query = $this->db->limit(3);
+            $query = $this->db->where('id_type_page', 1);
+            $query = $this->db->get('ex_page');
+            return $query->result_array();
+    }
 } 
