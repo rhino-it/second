@@ -12,6 +12,7 @@ class Pages extends CI_Controller {
 		$this->load->model('Get_model');
 		$this->load->view('head_view');
 		$data['main_menu'] = $this->Get_model->md_menu(1);
+		$data['main_page_news'] = $this->Get_model->main_page_news();
 		$this->load->view('header_view',$data);
 		$this->load->view('slider_view');
 		$this->load->view('news_view');
@@ -69,12 +70,12 @@ class Pages extends CI_Controller {
 	{
 		$this->load->model('Get_model');
 		$this->load->view('head_view');
-			$data['main_menu'] = $this->Get_model->md_menu(1);
+		$data['main_menu'] = $this->Get_model->md_menu(1);
 		$this->load->view('header_view',$data);
 		$this->load->view('staff_view');
 		$this->load->view('footer_view');
 	}
-		public function doctor($id=0)
+	public function doctor($id=0)
 	{
 		$this->load->model('Get_model');
 		$this->load->view('head_view');
@@ -83,14 +84,54 @@ class Pages extends CI_Controller {
 		$this->load->view('doctor_view');
 		$this->load->view('footer_view');
 	}
-		public function page($id=0)
-		{
+	public function page($id=0)
+	{
 		$this->load->model('Get_model');
 		$this->load->view('head_view');
 		$data['main_menu'] = $this->Get_model->md_menu(1);
 		$data['inf'] = $this->Get_model->inf($id);
 		$this->load->view('header_view',$data);
 		$this->load->view('content_view');
+		$this->load->view('footer_view');
+	}
+	public function arhiv($id=0)
+	{
+		$this->load->model('Get_model');
+		$data['main_menu'] = $this->Get_model->md_menu(1);
+
+		$config['base_url'] = '/pages/arhiv/';
+		$config['total_rows'] = $this->db->count_all('ex_page');
+		$config['url_segment'] = 3;
+		$config['per_page'] = 6;
+		$config['num_links'] = 2;
+
+		$config['first_tag_open'] = '<li>';
+		$config['first_tag_close'] = '</li>';
+
+		$config['last_tag_open'] = '<li>';
+		$config['last_tag_close'] = '</li>';
+
+		$config['prev_tag_open'] = '<li>';
+		$config['prev_tag_close'] = '</li>';
+
+		$config['next_tag_open'] = '<li>';
+		$config['next_tag_close'] = '</li>';
+
+		$config['num_tag_open'] = '<li>';
+		$config['num_tag_close'] = '</li>';
+
+		$config['cur_tag_open'] = '<li class="active"><a href="#">';
+		$config['cur_tag_close'] = '</a></li>';
+
+		$config['first_link'] = 'Первая';
+		$config['last_link'] = 'Последняя';
+
+		$this->pagination->initialize($config);
+		$data['arhiv'] = $this->Get_model->arhiv($config['per_page'],$this->uri->segment(3));
+
+		$this->load->view('head_view');
+		$this->load->view('header_view',$data);
+		$this->load->view('arhiv_view',$data);
 		$this->load->view('footer_view');
 	}
 }	
