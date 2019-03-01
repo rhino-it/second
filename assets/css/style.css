@@ -854,8 +854,8 @@ ul {
   margin-bottom: 50px;
 }
 .news-block:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 6px #00cfef;
+  transform: scale(1.03);
+  box-shadow: 0 0 6px #00CFEF;
 }
 .news-block:hover .news-text {
   border-top: 2px solid #00CFEF;
