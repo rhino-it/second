@@ -1,6 +1,6 @@
 <div class="content">
 	<div class="container">
-		<h2 class="service">Новости <a href="<?php echo base_url('pages/arhiv');?>">Архив</a></h2>
+		<h2 class="service">Новости <a href="<?php echo base_url('pages/arhiv');?>">Архив <i class="fa fa-arrow-right"></i></a></h2>
 		<div class="row news">
 			<?php 
 			foreach ($main_page_news as $news):

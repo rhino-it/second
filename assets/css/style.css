@@ -158,12 +158,19 @@ ul {
   padding: 20px;
   font-family: Calibri;
   border-bottom: 2px solid skyblue;
+  position: relative;
 }
 .service a {
-  float: right;
+  position: absolute;
   font-size: .6em;
-  vertical-align: bottom;
-  padding-top: 15px;
+  top: 40%;
+  right: 0;
+}
+.service a i {
+  padding-left: 5px;
+  padding-bottom: 1px;
+  font-size: .7em;
+  vertical-align: middle;
 }
 /*Услуги конец*/
 /*Футер */
@@ -847,8 +854,8 @@ ul {
   margin-bottom: 50px;
 }
 .news-block:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 6px #00cfef;
+  transform: scale(1.03);
+  box-shadow: 0 0 6px #00CFEF;
 }
 .news-block:hover .news-text {
   border-top: 2px solid #00CFEF;
