@@ -25,13 +25,10 @@ class Get_model extends CI_Model {
             $query = $this->db->get('ex_page');
             return $query->result_array();
     }
-<<<<<<< HEAD
-=======
     function  arhiv($num, $offset){
      $this->db->order_by('id', 'DESC');
      $query = $this->db->where('id_type_page', 1);
      $query = $this->db->get('ex_page', $num, $offset);
      return $query->result_array();     
     }
->>>>>>> 3c51c8e89321ddb4544e8a4984c7c2f7d19bb866
 } 
