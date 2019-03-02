@@ -13,10 +13,12 @@ class Pages extends CI_Controller {
 		$this->load->view('head_view');
 		$data['main_menu'] = $this->Get_model->md_menu(1);
 		$data['main_page_news'] = $this->Get_model->main_page_news();
+		$data['uslugi'] = $this->Get_model->uslugi();
+		
 		$this->load->view('header_view',$data);
 		$this->load->view('slider_view');
 		$this->load->view('news_view');
-		$this->load->view('middle_view');
+		$this->load->view('middle_view',$data);
 		$this->load->view('about_view');
 		$this->load->view('footer_view');
 	}
@@ -132,6 +134,15 @@ class Pages extends CI_Controller {
 		$this->load->view('head_view');
 		$this->load->view('header_view',$data);
 		$this->load->view('arhiv_view',$data);
+		$this->load->view('footer_view');
+	}
+	public function uslugi_detail($id=0)
+	{
+		$this->load->model('Get_model');
+		$data['uslugi_detail'] = $this->Get_model->uslugi_detail($id);
+
+		$this->load->view('head_view');
+		$this->load->view('uzi_view',$data);
 		$this->load->view('footer_view');
 	}
 }	

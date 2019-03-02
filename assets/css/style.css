@@ -898,12 +898,13 @@ ul {
 .uzi {
   padding: 15px 0;
 }
-.uzi .main_img img {
-  width: 100%;
-  border-top-right-radius: 25px;
-}
 .uzi .main_img {
+  height: 500px;
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px 0;
 }
 .uzi .text {
   background-color: #00CFEF;
@@ -920,6 +921,16 @@ ul {
   font-weight: bold;
   font-family: Calibri;
   font-size: 1.6rem;
+}
+.uzi .main_text {
+  font-size: 1.2em;
+}
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 0;
 }
 /*END OF UZI*/
 .pagination_user {

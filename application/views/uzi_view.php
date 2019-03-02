@@ -6,16 +6,17 @@
 			</div>
 			<div class="col-md-12">
 				<div class="row">
-					<div class="col-md-5">
-						<div class="main_img" style="background-image:url('<?php echo base_url().'assets/files/medic/врач-узист.jpeg';?>')"></div>
+					<?php 
+						foreach ($uslugi_detail as $us_det) {
+					?>
+					<div class="main_img" style="background-image: url('<?php echo base_url().$us_det['foto']; ?>');"></div>
+					<div class="main_text">
+						<?php echo $us_det['page_text_ru']; ?>
 					</div>
-					<div class="col-md-7">
-						<div class="text">
-							Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Безорфографичный там буквенных, переулка щеке большого продолжил которое букв последний назад? Грамматики рукопись которой, то вскоре большой буквоград по всей грустный.
-						</div>
-					</div>
-
-
+					<?php
+						}
+					?>
+					.
 				</div>
 			</div>
 		</div>
