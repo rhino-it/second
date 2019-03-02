@@ -423,7 +423,14 @@ ul {
   width: 100%;
 }
 .carousel-inner .carousel-item {
-  height: 500px
+  height: 590px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sbottom{
+  background-position: bottom;
+  border:1px solid red;
 }
 .carousel-item img {
   height: 100% !important;
