@@ -18,7 +18,7 @@
 						<div class="carousel-item active">
 							<img src="<?php echo base_url().'assets/files/2.jpg'; ?>" alt="">
 	 						<div class="carousel-caption">
-								<h3>Профессиональная забота о Вашем здоровье</h3>
+								<h3>Профессиональная забота о Вашем здоровье</h3>	
 							</div>
 						</div>
 						<div class="carousel-item">
