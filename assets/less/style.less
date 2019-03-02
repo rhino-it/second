@@ -33,6 +33,7 @@ ul {
 
 
 
+
 .top{
 	background-color: #00D2F1;
 	color: #fff;
@@ -924,28 +925,45 @@ ul {
 .uzi{
   padding: 15px 0
 }
-.uzi .main_img img{
-  width: 100%;
-  border-top-right-radius: 25px
-}
 .uzi .main_img{
-  width: 100%
+  height: 500px;	width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 20px 0;
 }
-.uzi .text{
-  background-color: #00CFEF;
-  color: #fff;
-  font-family: Calibri;
-  padding: 10px 15px;
-  border-radius: 30px;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
-  font-size: 1rem
+.uzi {
+	& .text{
+	  background-color: #00CFEF;
+	  color: #fff;
+	  font-family: Calibri;
+	  padding: 10px 15px;
+	  border-radius: 30px;
+	  border-bottom-left-radius: 0;
+	  border-top-right-radius: 0;
+	  font-size: 1rem
+	}
+	& .title{
+	  color: #00CFEF;
+	  font-weight: bold;
+	  font-family: Calibri;
+	  font-size: 1.6rem;
+	}
+	.main_text {
+		font-size: 1.2em;
+		& div{
+			& p span{
+				// font-size: 1.7em;
+			}			
+		}
+	}
 }
-.uzi .title{
-  color: #00CFEF;
-  font-weight: bold;
-  font-family: Calibri;
-  font-size: 1.6rem
+.table-responsive {
+     display: block; 
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 0;
 }
 /*END OF UZI*/
 
