@@ -15,30 +15,22 @@
 					<!-- The slideshow -->
 
 					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="<?php echo base_url().'assets/images/slider/4.jpg'; ?>" alt="">
+						<div style="background-image:url(<?php echo base_url().'assets/files/2.jpg'; ?>) " class="carousel-item active">
+							<!-- <img src="<?php echo base_url().'assets/files/2.jpg'; ?>" alt=""> -->
 	 						<div class="carousel-caption">
-								<h3>Здоровый ребенек - счастливая семья !</h3>
-
-								<!-- <p>We had such a great time in LA!</p> -->
-
+								<h3>Профессиональная забота о Вашем здоровье</h3>	
 							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="<?php echo base_url().'assets/images/slider/66.jpg'; ?>" alt="">
+						<div style="background-image: url(<?php echo base_url().'assets/files/medic_photo/IMG_0077.JPG'; ?>)" class="carousel-item sbottom">
+							<!-- <img src="<?php echo base_url().'assets/files/medic_photo/IMG_0077.JPG'; ?>" alt=""> -->
 							<div class="carousel-caption">
-								<h3>Мы за здоровый образ жизни !</h3>
-
-								<!-- <p>We had such a great time in LA!</p> -->
-
+								<h3>Высокоточная диагностика по японским технологиям</h3>
 							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="<?php echo base_url().'assets/images/slider/77.jpeg'; ?>" alt="">
+						<div style="background-image: url(<?php echo base_url().'assets/files/medic_photo/Untitled-1.jpg'; ?>)" class="carousel-item">
+							<!-- <img src="<?php echo base_url().'assets/files/medic_photo/Untitled-1.jpg'; ?>" alt=""> -->
 							<div class="carousel-caption">
-								<h3>Правильное питание это не диета !</h3>
-
-								<!-- <p>We had such a great time in LA!</p> -->
+								<h3>Инновационно-интеграционные подходы в обучении</h3>
 							</div>
 						</div>
 					</div>
