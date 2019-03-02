@@ -428,14 +428,16 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
 }
-.sbottom{
-  background-position: bottom;
-  border:1px solid red;
-}
 .carousel-item img {
   height: 100% !important;
 }
+.carousel-caption h3{
+  font-weight: bold;
+  font-family: Calibri ;
+  text-shadow: 0 0 14px #333;
+ }
 /*CAROUSEL END*/
+
 /*text content*/
 .text_block-img img {
   width: 100%;
