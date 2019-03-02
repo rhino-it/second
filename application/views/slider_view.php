@@ -16,9 +16,9 @@
 
 					<div class="carousel-inner">
 						<div style="background-image:url(<?php echo base_url().'assets/files/2.jpg'; ?>) " class="carousel-item active">
-							<!-- <img src="<?php echo base_url().'assets/files/2.jpg'; ?>" alt=""> -->
+							<!-- <img src="<?php echo base_url().'assets/files/medic_photo/слайдер1/Untitled-1.jpg'; ?>" alt=""> -->
 	 						<div class="carousel-caption">
-								<h3>Профессиональная забота о Вашем здоровье</h3>	
+								<h3>Профессиональная забота о Вашем здоровье1</h3>	
 							</div>
 						</div>
 						<div style="background-image: url(<?php echo base_url().'assets/files/medic_photo/IMG_0077.JPG'; ?>)" class="carousel-item sbottom">
