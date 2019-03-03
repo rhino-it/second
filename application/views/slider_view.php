@@ -15,8 +15,8 @@
 					<!-- The slideshow -->
 
 					<div class="carousel-inner">
-						<div style="background-image:url(<?php echo base_url().'assets/files/2.jpg'; ?>) " class="carousel-item active">
-							<!-- <img src="<?php echo base_url().'assets/files/2.jpg'; ?>" alt=""> -->
+						<div style="background-image:url(<?php echo base_url().'assets/files/medic_photo/слайдер1/4.jpg'; ?>) " class="carousel-item active">
+							<!-- <img src="<?php echo base_url().'assets/files/medic_photo/слайдер1/IMG_0062.jpeg'; ?>" alt=""> -->
 	 						<div class="carousel-caption">
 								<h3>Профессиональная забота о Вашем здоровье</h3>	
 							</div>
@@ -27,7 +27,7 @@
 								<h3>Высокоточная диагностика по японским технологиям</h3>
 							</div>
 						</div>
-						<div style="background-image: url(<?php echo base_url().'assets/files/medic_photo/Untitled-1.jpg'; ?>)" class="carousel-item">
+						<div style="background-image: url(<?php echo base_url().'assets/files/medic_photo/слайдер3/1.jpg'; ?>)" class="carousel-item">
 							<!-- <img src="<?php echo base_url().'assets/files/medic_photo/Untitled-1.jpg'; ?>" alt=""> -->
 							<div class="carousel-caption">
 								<h3>Инновационно-интеграционные подходы в обучении</h3>
