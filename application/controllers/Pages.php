@@ -139,10 +139,21 @@ class Pages extends CI_Controller {
 	public function uslugi_detail($id=0)
 	{
 		$this->load->model('Get_model');
+		$data['main_menu'] = $this->Get_model->md_menu(1);
 		$data['uslugi_detail'] = $this->Get_model->uslugi_detail($id);
 
 		$this->load->view('head_view');
+		$this->load->view('header_view',$data);
 		$this->load->view('uzi_view',$data);
+		$this->load->view('footer_view');
+	}
+	public function total($id=0)
+	{
+		$this->load->model('Get_model');
+		$data['main_menu'] = $this->Get_model->md_menu(1);
+		$this->load->view('head_view');
+		$this->load->view('header_view',$data);
+		$this->load->view('total_view',$data);
 		$this->load->view('footer_view');
 	}
 }	

@@ -555,6 +555,7 @@ ul {
   /*border: 1px solid red*/
 }
 /*//RESULTS*/
+
 /*PRICE*/
 .layer {
   overflow: scroll;
@@ -654,6 +655,7 @@ ul {
   display: flex;
   justify-content: space-around;
   padding-bottom: 50px;
+  font-family: Calibri !important;
 }
 .sec1,
 .sec2,
@@ -675,8 +677,28 @@ ul {
   border: 1px solid #aaa;
   overflow-x: hidden;
 }
-.sec1 .scroll div {
-  position: relative;
+.sec1 .scroll table{
+  width: 100%
+}
+.sec1 .scroll table td{
+  width: 40%;
+  float: left;
+  text-align: center;
+  border-right: 2px solid skyblue;
+  border-bottom: 2px solid skyblue;
+}
+.sec1 .scroll table td:first-child{
+  width: 10%;
+  text-align: left;
+}
+.sec1 .scroll table td:last-child{
+  width: 10%;
+}
+.sec1 .scroll table td span{
+  display: inline-block;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: Calibri;
 }
 .sec1 .scroll span {
   display: block;
@@ -684,13 +706,9 @@ ul {
   color: #555;
 }
 .sec1 .scroll input {
-  position: absolute;
   display: block;
-  right: 10px;
-  top: 12px;
-  width: 18px;
-  height: 18px;
-  background: red;
+  width: 19px;
+  height: 19px;
 }
 .sec1 .scroll .sum {
   color: #666;
@@ -699,6 +717,7 @@ ul {
 .sec1 .scroll h1 {
   font-size: 1.5em;
   color: #023384;
+  font-weight: bold;
 }
 .sec1 p {
   padding: 15px 0px 5px 10px;
@@ -708,49 +727,51 @@ ul {
   color: #555;
 }
 .center-recipes {
-  color: #023372;
+  color:#333;
   text-align: center;
   font-size: 3em;
   font-weight: bold;
+  font-family: Calibri;
+}
+.button a{
+  background:skyblue;
+  color: #fff;
+  padding: 5px;
+  border:none;
+}
+.button{
+  padding-top:20px;
+  float: right;
 }
 .result-recipe {
   position: relative;
   padding: 20px 10px;
   box-shadow: 0px 0px 8px #ccc;
 }
-.result-recipe:after {
-  content: '';
-  display: block;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -5px;
-  background-repeat: repeat-x;
-  background-image: url(../files/a-torn.png);
-}
-.result-recipe:before {
-  content: '';
-  display: block;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -5px;
-  transform: rotate(180deg);
-  background-repeat: repeat-x;
-  background-image: url(../files/a-torn.png);
-}
 .result-recipe h1 {
   font-size: 1.3em;
   color: #023372;
   font-weight: bold;
 }
-.q1-recipe {
-  color: #023372;
-  font-weight: bold;
+.sec2 table{
+  width: 100%
 }
-.result-cotntent {
+.sec2 .result-content table tr td{
+  width: 45%;
+  float: left;
+}
+.sec2 .result-content table tr td:first-child{
+  width: 5%;
+  text-align: left;
+}
+.sec2 .result-content table td{
+  width: 40%;
+  float: left;
+  text-align: center;
+  border-right: 2px solid skyblue;
+  border-bottom: 2px solid skyblue;
+}
+.result-content {
   padding: 10px 0;
   margin: 10px 0;
   border-top: 1px dotted #ccc;
@@ -971,7 +992,6 @@ ul {
 .pagination_user ul li.active {
   opacity: .5;
 }
-<<<<<<< HEAD
 
 /*ENF OF SERVICE*/
 
@@ -1003,5 +1023,3 @@ ul {
   font-size: 1.6rem
 }
 /*END OF UZI*/
-=======
->>>>>>> 3c51c8e89321ddb4544e8a4984c7c2f7d19bb866

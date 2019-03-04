@@ -21,7 +21,7 @@
 								<h3>Профессиональная забота о Вашем здоровье</h3>	
 							</div>
 						</div>
-						<div style="background-image: url(<?php echo base_url().'assets/files/medic_photo/IMG_0077.JPG'; ?>)" class="carousel-item sbottom">
+						<div style="background-image: url(<?php echo base_url().'assets/files/medic_photo/IMG_0077.JPG'; ?>)" class="carousel-item">
 							<!-- <img src="<?php echo base_url().'assets/files/medic_photo/IMG_0077.JPG'; ?>" alt=""> -->
 							<div class="carousel-caption">
 								<h3>Высокоточная диагностика по японским технологиям</h3>
