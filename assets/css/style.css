@@ -650,7 +650,8 @@ ul {
 .sec2,
 .sec3 {
   flex: 1;
-  padding: 10px;
+  padding: 10px 0;
+  margin: 0 250px;
 }
 .sec1 select {
   display: block;
@@ -665,23 +666,29 @@ ul {
   padding: 5px;
   border: 1px solid #aaa;
   overflow-x: hidden;
+  font-family: Calibri;
 }
-.sec1 .scroll div {
-  position: relative;
+.sec1 .scroll table td {
+  width: 50%;
 }
-.sec1 .scroll span {
-  display: block;
+.sec1 .scroll table tr {
+  border-bottom: 2px solid #00d2f1;
+  font-family: Calibri;
+}
+.sec1 .scroll .name {
+  color: #00d2f1;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 0 10px;
+}
+.sec1 .scroll span:nth-child(odd) {
+  color: #02306C;
+  font-weight: bold;
   font-size: 1.2em;
-  color: #555;
 }
-.sec1 .scroll input {
-  position: absolute;
-  display: block;
-  right: 10px;
-  top: 12px;
-  width: 18px;
-  height: 18px;
-  background: red;
+.sec1 .scroll span:nth-child(even) {
+  padding-left: 50px;
+  color: #00d2f1;
 }
 .sec1 .scroll .sum {
   color: #666;
@@ -695,7 +702,7 @@ ul {
   padding: 15px 0px 5px 10px;
   margin-bottom: 0;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: #555;
 }
 .center-recipes {
@@ -707,30 +714,7 @@ ul {
 .result-recipe {
   position: relative;
   padding: 20px 10px;
-  box-shadow: 0px 0px 8px #ccc;
-}
-.result-recipe:after {
-  content: '';
-  display: block;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -5px;
-  background-repeat: repeat-x;
-  background-image: url(../files/a-torn.png);
-}
-.result-recipe:before {
-  content: '';
-  display: block;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -5px;
-  transform: rotate(180deg);
-  background-repeat: repeat-x;
-  background-image: url(../files/a-torn.png);
+  box-shadow: 0 -10px 10px -5px #00d2f1, 0px 0 10px 0px #00ced1, 0 10px 10px -5px #00d2f1, 0px 0 0 0px #7fff00;
 }
 .result-recipe h1 {
   font-size: 1.3em;

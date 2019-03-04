@@ -12,92 +12,23 @@
 							<option value="">item5</option>
 							<option value="">item5</option>
 							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
-							<option value="">item5</option>
 						</select>
 						<p>Все анализы (<span>647</span>)</p>		
 						<div class="scroll">
-							<h1>Диагностика анемий</h1>
+							<!-- <h1>Диагностика анемий</h1> -->
 							<div>
-								<span>Железо</span>
-								<span>280 сом</span>
-								<input type="checkbox">
-							</div><div>
-								<span>Железо</span>
-								<span>280 сом</span>
-								<input type="checkbox">
-							</div><div>
-								<span>Железо</span>
-								<span>280 сом</span>
-								<input type="checkbox">
-							</div><div>
-								<span>Железо</span>
-								<span>280 сом</span>
-								<input type="checkbox">
-							</div><div>
-								<span>Железо</span>
-								<span>280 сом</span>
-								<input type="checkbox">
-							</div><div>
-								<span>Железо</span>
-								<span>280 сом</span>
-								<input type="checkbox">
+								<table>
+									<tr>
+										<td class="name">Железо</td>
+										<td class="price">280сом</td>
+										<td><input type="checkbox"></td>
+									</tr>
+								</table>
 							</div>
 						</div>
 			</div>
+		</div>
+		<div class="recipes">
 			<div class="sec2">
 				<div class="result-recipe">
 					<h1>Выбрано исследований</h1>
@@ -117,9 +48,6 @@
 				</table>
 					</div>
 				</div>
-			</div>
-			<div class="sec3">
-				
 			</div>
 		</div>
 </div>
