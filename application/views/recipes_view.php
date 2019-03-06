@@ -77,10 +77,10 @@
 							<h1>Диагностика анемий</h1>
 								<table>
 									<tr class="bb">
-											<td><span>1)</span></td>
+											<td><span class="pd">1)</span></td>
 											<td><span>Наименование</span></td>
 											<td><span>Цена</span></td>
-											<td><span><input type="checkbox"></span></td>
+											<td><span class="pd"><input type="checkbox"></span></td>
 									</tr>
 								</table>
 						</div>
@@ -88,8 +88,6 @@
 							<a href="<?php echo base_url().'pages/total'; ?>">Готово</a>
 						</div>
 			</div>
-<<<<<<< HEAD
-=======
 		<div class="sec2 col-md-8">
 			<div class="result-recipe">
 				<h1>Выбрано исследований (1)</h1>
@@ -117,7 +115,6 @@
 		</div>
 		</div>
 </div>
->>>>>>> a128c994117434380852ee12639426a0b06ad2f5
 		</div>
 
 
