@@ -759,11 +759,19 @@ ul {
 .sec2 .result-content table tr td{
   width: 45чё%;
   float: left;
+<<<<<<< HEAD
 }
 .sec2 .result-content table tr td:first-child{
   width: 5%;
   text-align: left;
 }
+=======
+}
+.sec2 .result-content table tr td:first-child{
+  width: 5%;
+  text-align: left;
+}
+>>>>>>> a128c994117434380852ee12639426a0b06ad2f5
 .sec2 .result-content table td{
   width: 40%;
   float: left;
@@ -993,6 +1001,7 @@ ul {
   opacity: .5;
 }
 
+<<<<<<< HEAD
 /*ENF OF SERVICE*/
 
 /*UZI*/
@@ -1023,3 +1032,27 @@ ul {
   font-size: 1.6rem
 }
 /*END OF UZI*/
+=======
+
+
+
+
+/*Kozhomkul*/
+
+.nav-tabs {
+    margin-bottom: 20px;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #fff;
+    background-color: #00CFEF;
+  }
+  .fio{
+    padding-bottom: 20px;
+  }
+  .fio p{
+    margin-bottom: 0px;
+    padding-top: 10px;
+  }
+/*Kozhomkul ends*/
+
+>>>>>>> a128c994117434380852ee12639426a0b06ad2f5
