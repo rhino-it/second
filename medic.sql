@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 06 2019 г., 13:29
+-- Время создания: Мар 06 2019 г., 13:51
 -- Версия сервера: 5.5.41-log
 -- Версия PHP: 5.3.29
 
@@ -113,10 +113,17 @@ CREATE TABLE IF NOT EXISTS `ex_medic_patient` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(250) NOT NULL,
   `birthday` date NOT NULL,
-  `phone_number` int(20) NOT NULL,
-  `addres` varchar(250) NOT NULL,
+  `phone_number` varchar(20) NOT NULL,
+  `address` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Дамп данных таблицы `ex_medic_patient`
+--
+
+INSERT INTO `ex_medic_patient` (`id`, `name`, `birthday`, `phone_number`, `address`) VALUES
+(1, 'Акмат', '2019-03-20', '0778456565', 'ул. Алиева');
 
 -- --------------------------------------------------------
 
@@ -126,26 +133,41 @@ CREATE TABLE IF NOT EXISTS `ex_medic_patient` (
 
 CREATE TABLE IF NOT EXISTS `ex_medic_patient_analysys` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
-  `id_record_book` int(20) NOT NULL,
+  `id_data` int(20) NOT NULL,
   `id_analysys` int(20) NOT NULL,
   `price` int(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Дамп данных таблицы `ex_medic_patient_analysys`
+--
+
+INSERT INTO `ex_medic_patient_analysys` (`id`, `id_data`, `id_analysys`, `price`) VALUES
+(1, 1, 2, 456);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `ex_medic_record_book`
+-- Структура таблицы `ex_medic_patient_data`
 --
 
-CREATE TABLE IF NOT EXISTS `ex_medic_record_book` (
+CREATE TABLE IF NOT EXISTS `ex_medic_patient_data` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
   `id_patient` int(20) NOT NULL,
   `data` date NOT NULL,
   `result` varchar(250) NOT NULL,
   `md5` varchar(100) NOT NULL,
+  `sum` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Дамп данных таблицы `ex_medic_patient_data`
+--
+
+INSERT INTO `ex_medic_patient_data` (`id`, `id_patient`, `data`, `result`, `md5`, `sum`) VALUES
+(1, 1, '2019-03-12', 'ttt.pdf', '535trtret4546', '350');
 
 -- --------------------------------------------------------
 

@@ -645,13 +645,13 @@ ul {
   display: flex;
   justify-content: space-around;
   padding-bottom: 50px;
+  font-family: Calibri !important;
 }
 .sec1,
 .sec2,
 .sec3 {
   flex: 1;
-  padding: 10px 0;
-  margin: 0 250px;
+  padding: 10px;
 }
 .sec1 select {
   display: block;
@@ -666,29 +666,39 @@ ul {
   padding: 5px;
   border: 1px solid #aaa;
   overflow-x: hidden;
+}
+.sec1 .scroll table{
+  width: 100%
+}
+.sec1 .scroll table td{
+  width: 40%;
+  float: left;
+  text-align: center;
+  border-right: 2px solid skyblue;
+  border-bottom: 2px solid skyblue;
+}
+.sec1 .scroll table td:first-child{
+  width: 10%;
+  text-align: left;
+}
+.sec1 .scroll table td:last-child{
+  width: 10%;
+}
+.sec1 .scroll table td span{
+  display: inline-block;
+  padding-right: 20px;
+  padding-left: 20px;
   font-family: Calibri;
 }
-.sec1 .scroll table td {
-  width: 50%;
-}
-.sec1 .scroll table tr {
-  border-bottom: 2px solid #00d2f1;
-  font-family: Calibri;
-}
-.sec1 .scroll .name {
-  color: #00d2f1;
-  font-weight: bold;
-  font-size: 1.4rem;
-  padding: 0 10px;
-}
-.sec1 .scroll span:nth-child(odd) {
-  color: #02306C;
-  font-weight: bold;
+.sec1 .scroll span {
+  display: block;
   font-size: 1.2em;
+  color: #555;
 }
-.sec1 .scroll span:nth-child(even) {
-  padding-left: 50px;
-  color: #00d2f1;
+.sec1 .scroll input {
+  display: block;
+  width: 19px;
+  height: 19px;
 }
 .sec1 .scroll .sum {
   color: #666;
@@ -697,35 +707,61 @@ ul {
 .sec1 .scroll h1 {
   font-size: 1.5em;
   color: #023384;
+  font-weight: bold;
 }
 .sec1 p {
   padding: 15px 0px 5px 10px;
   margin-bottom: 0;
   font-weight: bold;
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: #555;
 }
 .center-recipes {
-  color: #023372;
+  color:#333;
   text-align: center;
   font-size: 3em;
   font-weight: bold;
+  font-family: Calibri;
+}
+.button a{
+  background:skyblue;
+  color: #fff;
+  padding: 5px;
+  border:none;
+}
+.button{
+  padding-top:20px;
+  float: right;
 }
 .result-recipe {
   position: relative;
   padding: 20px 10px;
-  box-shadow: 0 -10px 10px -5px #00d2f1, 0px 0 10px 0px #00ced1, 0 10px 10px -5px #00d2f1, 0px 0 0 0px #7fff00;
+  box-shadow: 0px 0px 8px #ccc;
 }
 .result-recipe h1 {
   font-size: 1.3em;
   color: #023372;
   font-weight: bold;
 }
-.q1-recipe {
-  color: #023372;
-  font-weight: bold;
+.sec2 table{
+  width: 100%
 }
-.result-cotntent {
+.sec2 .result-content table tr td{
+  width: 45чё%;
+  float: left;
+}
+.sec2 .result-content table tr td:first-child{
+  width: 5%;
+  text-align: left;
+}
+.sec2 .result-content table td{
+  width: 40%;
+  float: left;
+  text-align: center;
+  border-right: 2px solid skyblue;
+  border-bottom: 2px solid skyblue;
+}
+.result-content {
   padding: 10px 0;
   margin: 10px 0;
   border-top: 1px dotted #ccc;
@@ -946,3 +982,26 @@ ul {
 .pagination_user ul li.active {
   opacity: .5;
 }
+
+
+
+
+
+/*Kozhomkul*/
+
+.nav-tabs {
+    margin-bottom: 20px;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #fff;
+    background-color: #00CFEF;
+  }
+  .fio{
+    padding-bottom: 20px;
+  }
+  .fio p{
+    margin-bottom: 0px;
+    padding-top: 10px;
+  }
+/*Kozhomkul ends*/
+
