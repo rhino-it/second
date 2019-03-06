@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 02 2019 г., 14:50
+-- Время создания: Мар 06 2019 г., 13:29
 -- Версия сервера: 5.5.41-log
 -- Версия PHP: 5.3.29
 
@@ -113,6 +113,8 @@ CREATE TABLE IF NOT EXISTS `ex_medic_patient` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(250) NOT NULL,
   `birthday` date NOT NULL,
+  `phone_number` int(20) NOT NULL,
+  `addres` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
