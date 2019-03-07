@@ -41,4 +41,13 @@ class Get_model extends CI_Model {
      $query = $this->db->get('ex_page');
      return $query->result_array();     
     }
+    // function  recipes_uslugi(){
+    //  // $query = $this->db->where('id_parent', 0);
+    //  $query = $this->db->get('ex_medic_list_of_analisys');
+    //  return $query->result_array();     
+    // }
+    // function  recipes_medicoment(){     
+    //  $query = $this->db->get('ex_medic_list_of_analisys');
+    //  return $query->result_array();     
+    // }
 } 

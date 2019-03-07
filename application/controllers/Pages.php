@@ -61,10 +61,13 @@ class Pages extends CI_Controller {
 	public function recipes($id=0)
 	{
 		$this->load->model('Get_model');
-		$this->load->view('head_view');
 		$data['main_menu'] = $this->Get_model->md_menu(1);
+		// $data['recipes_uslugi'] = $this->Get_model->recipes_uslugi();
+		// $data['recipes_medicoment'] = $this->Get_model->recipes_medicoment();
+
+		$this->load->view('head_view');
 		$this->load->view('header_view',$data);
-		$this->load->view('recipes_view');
+		$this->load->view('recipes_view',$data);
 		$this->load->view('footer_view');
 	}
 

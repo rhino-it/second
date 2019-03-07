@@ -1,3 +1,4 @@
+// menu fixed start
 $(document).ready(function($) {
     $nav = $('.fixed-div');
     $nav.css('width', $nav.outerWidth());
@@ -11,7 +12,9 @@ $(document).ready(function($) {
         }
     });
 });
+// menu fixed end
 
+// menu click pod_menu start
 var castle = false;
 if ($(window).width()<990) {
     castle = true;
@@ -19,7 +22,6 @@ if ($(window).width()<990) {
 else {
     castle = false
 }
-
 if (castle==true) {
     var a=document.querySelectorAll('.menu_click > li');
     for (var i = 0; i < a.length; i++) {
@@ -29,7 +31,7 @@ if (castle==true) {
         this.children[1].classList.toggle('q1');
     }
 }
-
+// menu click pod_menu end
 
   function showOrHide(cb, cat) {
     cb = document.getElementById(cb);
@@ -50,4 +52,3 @@ if (castle==true) {
 
  });
 })
-
